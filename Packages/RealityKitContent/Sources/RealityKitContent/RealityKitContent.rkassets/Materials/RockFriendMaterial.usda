@@ -1,0 +1,26 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (469.0.0.0.1)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "RockFriend_PBR_Packed_MI" (
+        active = true
+        references = @MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM>
+    )
+    {
+        asset inputs:Basecolor_Roughness_Tex = @../SourceAssets/Textures/RockFriends_bcr.png@
+        float inputs:FadeMixAmount = 0
+        asset inputs:Normal_AO_Tex = @../SourceAssets/Textures/RockFriends_nao.png@
+        token outputs:mtlx:surface.connect = </Root/RockFriend_PBR_Packed_MI/PBRSurface.outputs:out>
+        float2 ui:nodegraph:node:pos = (40, 40)
+        int ui:nodegraph:node:stackingOrder = 2
+    }
+}
+

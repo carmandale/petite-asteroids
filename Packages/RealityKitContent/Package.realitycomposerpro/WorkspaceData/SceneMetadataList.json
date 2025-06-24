@@ -1,0 +1,3706 @@
+{
+  "07D39E7C-54F0-4D1C-BA87-5A4CFE13FC32" : {
+    "objectMetadataList" : [
+      [
+        "07D39E7C-54F0-4D1C-BA87-5A4CFE13FC32",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "13645D89-CD6F-4220-AAC6-10F3890F9A53" : {
+    "objectMetadataList" : [
+      [
+        "13645D89-CD6F-4220-AAC6-10F3890F9A53",
+        "Root",
+        "ImpactSfxasd"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "13645D89-CD6F-4220-AAC6-10F3890F9A53",
+        "Root",
+        "ImpactSfx"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "13645D89-CD6F-4220-AAC6-10F3890F9A53",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC" : {
+    "objectMetadataList" : [
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterNodeGraphs"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterMaterials",
+        "PBR_Packed_MM"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterMaterials",
+        "Unlit_MM"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterNodeGraphs",
+        "OffsetY"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterMaterials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterMaterials",
+        "Skydome_MM"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterMaterials",
+        "PBR_Temp_MM"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1A64FE71-AA2A-44A6-86E9-74B83AD4F7BC",
+        "Root",
+        "MasterNodeGraphs",
+        "FadeColor"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB" : {
+    "objectMetadataList" : [
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_Start",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_Start"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "Notify_PromptReadyToPlay",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_3",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_1",
+        "SpeechBubble",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump",
+        "ShowHide",
+        "TutorialLevelAssets2",
+        "Platform_Rot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump",
+        "ShowHide",
+        "TutorialLevelAssets2",
+        "Platform_Rot_1",
+        "Platform_Pos"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump",
+        "ShowHide"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PlayIntro"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "PebbleRockIntro"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_2",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_2",
+        "SpeechBubble",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Background",
+        "IntroBackdrop"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Skybox"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "Notify_PromptReadyToPlay"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PlayIntro"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "PebbleRockIntro",
+        "Shake",
+        "FallDirectionRot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "PebbleRockIntro",
+        "Shake",
+        "FallDirectionRot",
+        "PebbleRock"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump",
+        "ShowHide",
+        "TutorialLevelAssets2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PlayIntro",
+        "Track8"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PlayIntro",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PromptReadyToPlay",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "JumpTutorial2",
+        "Track9"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Background"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "CharacterSpawnPoint_Origin"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PhysicsRoot",
+        "Skybox"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Lighting"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_1",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PlayIntro",
+        "Track9"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_3",
+        "SpeechBubble",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "IntroBackdrop"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PlayIntro",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "TutorialLevelAssets2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump",
+        "ShowHide",
+        "TutorialLevelAssets2",
+        "Platform_Rot_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "PortalExterior",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "Tutorial_Jump",
+        "ShowHide",
+        "TutorialLevelAssets2",
+        "Platform_Rot",
+        "Platform_Pos"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PlayIntro",
+        "Track17"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PortalMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "PebbleRockIntro",
+        "Shake"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1CC5162A-D388-4AE4-9CD2-424BBDC6D1AB",
+        "Root_Scene_Tutorial_1",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "2462B4D1-3729-4740-A527-08AF2D4079AE" : {
+    "objectMetadataList" : [
+      [
+        "2462B4D1-3729-4740-A527-08AF2D4079AE",
+        "Root",
+        "MasterNodeGraphs"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2462B4D1-3729-4740-A527-08AF2D4079AE",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2462B4D1-3729-4740-A527-08AF2D4079AE",
+        "Root",
+        "MasterMaterials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2462B4D1-3729-4740-A527-08AF2D4079AE",
+        "Root",
+        "MasterMaterials",
+        "PBR_DropShadow_MM"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9" : {
+    "objectMetadataList" : [
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_09_8"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_06_5"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_07_6",
+        "PlatformA_loc_007_19"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_10_9",
+        "PlatformA_loc_010_22"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_01_0",
+        "PlatformA_loc_001_13"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_05_4",
+        "PlatformA_loc_005_17"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_02_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_07_6"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_03_2",
+        "PlatformA_loc_003_15"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_13_12"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_13_12",
+        "PlatformA_loc_013_25"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_02_1",
+        "PlatformA_loc_002_14"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_09_8",
+        "PlatformA_loc_009_21"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_11_10",
+        "PlatformA_loc_011_23"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_05_4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_12_11"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_08_7"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_04_3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_06_5",
+        "PlatformA_loc_006_18"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_03_2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_PBR_Temp_MI"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_11_10"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_10_9"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_12_11",
+        "PlatformA_loc_012_24"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_01_0"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_08_7",
+        "PlatformA_loc_008_20"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_04_3",
+        "PlatformA_loc_004_16"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "2BD24514-86D6-4A9A-B46F-64DF2E05B4D9",
+        "Root",
+        "Platforms_Container",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "2CA5E205-068E-4319-BF62-3798B3DDDE41" : {
+    "objectMetadataList" : [
+      [
+        "2CA5E205-068E-4319-BF62-3798B3DDDE41",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "2EF998C0-C122-4093-9D64-D1B6D5E94C55" : {
+    "objectMetadataList" : [
+      [
+        "2EF998C0-C122-4093-9D64-D1B6D5E94C55",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "505FC2C8-7C64-4664-901D-B55071515B1E" : {
+    "objectMetadataList" : [
+      [
+        "505FC2C8-7C64-4664-901D-B55071515B1E",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "553BCABF-3F57-4787-A5E3-C8D1B67DA1BC" : {
+    "objectMetadataList" : [
+      [
+        "553BCABF-3F57-4787-A5E3-C8D1B67DA1BC",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "582AD03E-C50E-4968-A2BD-69537C4F5A9C" : {
+    "objectMetadataList" : [
+      [
+        "582AD03E-C50E-4968-A2BD-69537C4F5A9C",
+        "Root",
+        "PebbleRock_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "582AD03E-C50E-4968-A2BD-69537C4F5A9C",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "582AD03E-C50E-4968-A2BD-69537C4F5A9C",
+        "Root",
+        "PebbleRock_Container",
+        "PebbleRock"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "6858C435-5906-4893-9B65-AF1C2467BE69" : {
+    "objectMetadataList" : [
+      [
+        "6858C435-5906-4893-9B65-AF1C2467BE69",
+        "Root",
+        "Pebble_PBR_Packed_MI"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6858C435-5906-4893-9B65-AF1C2467BE69",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6858C435-5906-4893-9B65-AF1C2467BE69",
+        "Root",
+        "Pebble_PBR_Packed_MI",
+        "Bilinear4x4PCF"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "6C174039-A6B4-4C20-AD95-74CE103BF8A8" : {
+    "objectMetadataList" : [
+      [
+        "6C174039-A6B4-4C20-AD95-74CE103BF8A8",
+        "Root",
+        "Butte_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6C174039-A6B4-4C20-AD95-74CE103BF8A8",
+        "Root",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6C174039-A6B4-4C20-AD95-74CE103BF8A8",
+        "Root",
+        "Platforms",
+        "Platforms",
+        "Platform_006_002_14"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6C174039-A6B4-4C20-AD95-74CE103BF8A8",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6C174039-A6B4-4C20-AD95-74CE103BF8A8",
+        "Root",
+        "Platforms",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "6CB067F7-B86E-454D-B282-540C0DF93B67" : {
+    "objectMetadataList" : [
+      [
+        "6CB067F7-B86E-454D-B282-540C0DF93B67",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "7BAD1749-A606-45EB-8FD1-184D76A389BA" : {
+    "objectMetadataList" : [
+      [
+        "7BAD1749-A606-45EB-8FD1-184D76A389BA",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "7CB352C2-13D5-49CC-8802-F9F4C2706CE5" : {
+    "objectMetadataList" : [
+      [
+        "7CB352C2-13D5-49CC-8802-F9F4C2706CE5",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "83C667AC-2C51-4296-82D0-F31221DF6867" : {
+    "objectMetadataList" : [
+      [
+        "83C667AC-2C51-4296-82D0-F31221DF6867",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF" : {
+    "objectMetadataList" : [
+      [
+        "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF",
+        "Root",
+        "CharacterSquash",
+        "CharacterRotation"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF",
+        "Root",
+        "CharacterSquash"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF",
+        "Root",
+        "CharacterMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF",
+        "Root",
+        "CharacterSquash",
+        "CharacterRotation",
+        "CharacterRock"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8AFBF4A7-0B2E-496D-A61B-A4E8569EBEEF",
+        "Root",
+        "PupilMaterial"
+      ],
+      {
+        "isExpanded" : false,
+        "isLocked" : true
+      }
+    ]
+  },
+  "9D1ADEAB-6A77-4121-95DF-53EED2053BA0" : {
+    "objectMetadataList" : [
+      [
+        "9D1ADEAB-6A77-4121-95DF-53EED2053BA0",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "AE504017-00D7-4C67-97A4-9F31C1338030" : {
+    "objectMetadataList" : [
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root_Scene_Tutorial_3",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root_Scene_Tutorial_3",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root_Scene_Tutorial_3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root_Scene_Tutorial_3",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root_Scene_Tutorial_3",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AE504017-00D7-4C67-97A4-9F31C1338030",
+        "Root_Scene_Tutorial_3",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "B1705CED-CB8A-43DD-8350-0E2161FDCEED" : {
+    "objectMetadataList" : [
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte_1",
+        "Pebble_layout_v005_1",
+        "PebbleMap"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte_1",
+        "Pebble_layout_v005_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B1705CED-CB8A-43DD-8350-0E2161FDCEED",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "BC2DB873-40C7-4A20-AA6C-FBE7600F0231" : {
+    "objectMetadataList" : [
+      [
+        "BC2DB873-40C7-4A20-AA6C-FBE7600F0231",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "C2CFC005-0ECD-4AF1-A652-042E9F1E499C" : {
+    "objectMetadataList" : [
+      [
+        "C2CFC005-0ECD-4AF1-A652-042E9F1E499C",
+        "Root",
+        "RollFX"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "C2CFC005-0ECD-4AF1-A652-042E9F1E499C",
+        "Root",
+        "ImpactFX"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "C2CFC005-0ECD-4AF1-A652-042E9F1E499C",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "C6E36DF8-B227-4E47-B3C0-E1C299DA3409" : {
+    "objectMetadataList" : [
+      [
+        "C6E36DF8-B227-4E47-B3C0-E1C299DA3409",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "CB787422-205E-4C95-94D4-DB3923E28CD8" : {
+    "objectMetadataList" : [
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "CharacterSpawnPoint_Origin"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CB787422-205E-4C95-94D4-DB3923E28CD8",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "CC3D359F-B04E-4CEB-8C51-C587109A8D28" : {
+    "objectMetadataList" : [
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Checkpoint",
+        "Sphere_Inactive"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Activate",
+        "Track2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Checkpoint",
+        "Sphere_Active"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Checkpoint"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Activate"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Activate",
+        "Track3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Reset",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Reset",
+        "Track3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Checkpoint",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Test",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "CC3D359F-B04E-4CEB-8C51-C587109A8D28",
+        "Root",
+        "Checkpoint",
+        "Sphere_Active",
+        "MaterialActive"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "CE670E30-D3CD-4E93-854D-6D52CDE8D88D" : {
+    "objectMetadataList" : [
+      [
+        "CE670E30-D3CD-4E93-854D-6D52CDE8D88D",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "D66134B1-3681-4A8E-AFE5-29F257229F3B" : {
+    "objectMetadataList" : [
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PlayOutro"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Skydome"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry",
+        "StaticLevel",
+        "Skydome"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Ground"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PlayOutro",
+        "Track"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte",
+        "Pebble_layout_v005_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte",
+        "Pebble_layout_v005_1",
+        "PebbleMap"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_5"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry",
+        "StaticLevel",
+        "ShadowProxy",
+        "ShadowProxy_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Platforms",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte",
+        "Pebble_layout_v005_1",
+        "PebbleMap",
+        "Platforms",
+        "Platform_7"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry",
+        "StaticLevel",
+        "ShadowProxy"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_9"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_10"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelCollider",
+        "LevelCollider",
+        "Ground_Collider_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelCollider",
+        "LevelCollider",
+        "Ground_Collider_Container",
+        "Ground_Collider"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Platforms",
+        "Platforms_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry",
+        "StaticLevel",
+        "ShadowProxy",
+        "ShadowProxy_MI"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry",
+        "StaticLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_9",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Platforms",
+        "Platforms",
+        "Platform_006_002_14"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_11",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Butte_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_8"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Ground",
+        "Ground_Container",
+        "Ground"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry",
+        "StaticLevel",
+        "ShadowProxy",
+        "ShadowProxy_Container",
+        "ShadowProxy"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelCollider"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelGeometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Ground",
+        "Ground_Container",
+        "Ground",
+        "Ground_0"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_11"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Ground"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Platforms",
+        "Platforms_Container",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_5",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelCollider",
+        "LevelCollider"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Butte_1",
+        "Butte1_Container",
+        "Butte1",
+        "Butte1_0"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Skydome",
+        "Skydome"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Butte_1",
+        "Butte1_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_4",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_2",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_8",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "ExteriorLighting"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "Butte",
+        "Pebble_layout_v005_1",
+        "PebbleMap",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_1",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesMainPath",
+        "RockPickup_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "LevelVisuals",
+        "StaticLevel",
+        "Butte_1",
+        "Butte1_Container",
+        "Butte1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel",
+        "Ground",
+        "Ground_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Background",
+        "SizeAdjust",
+        "yOffset",
+        "StaticLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "D66134B1-3681-4A8E-AFE5-29F257229F3B",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "RockCollectiblesSecrets",
+        "RockPickup_10",
+        "RockPickup"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "E2F709AB-C7E0-4F87-A98A-03E161B80C61" : {
+    "objectMetadataList" : [
+      [
+        "E2F709AB-C7E0-4F87-A98A-03E161B80C61",
+        "Root",
+        "MasterMaterials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E2F709AB-C7E0-4F87-A98A-03E161B80C61",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E2F709AB-C7E0-4F87-A98A-03E161B80C61",
+        "Root",
+        "MasterNodeGraphs"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E2F709AB-C7E0-4F87-A98A-03E161B80C61",
+        "Root",
+        "MasterMaterials",
+        "Unlit_MM"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "E699EB01-F320-47AF-9170-4E97EE8AFC53" : {
+    "objectMetadataList" : [
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_07_6",
+        "PlatformA_loc_007_19"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_10_9",
+        "PlatformA_loc_010_22"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_02_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_12_11"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_09_8"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_11_10",
+        "PlatformA_loc_011_23"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_05_4",
+        "PlatformA_loc_005_17"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_03_2",
+        "PlatformA_loc_003_15"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_06_5"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_13_12"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_13_12",
+        "PlatformA_loc_013_25"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_08_7"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_01_0",
+        "PlatformA_loc_001_13"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_09_8",
+        "PlatformA_loc_009_21"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_06_5",
+        "PlatformA_loc_006_18"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_08_7",
+        "PlatformA_loc_008_20"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_10_9"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_07_6"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_11_10"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_03_2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_02_1",
+        "PlatformA_loc_002_14"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_04_3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_05_4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_12_11",
+        "PlatformA_loc_012_24"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_01_0"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E699EB01-F320-47AF-9170-4E97EE8AFC53",
+        "Root",
+        "Platforms_Container",
+        "Platforms",
+        "Platform_04_3",
+        "PlatformA_loc_004_16"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "E7A50CD0-1C3B-4D12-95D0-07A84387B585" : {
+    "objectMetadataList" : [
+      [
+        "E7A50CD0-1C3B-4D12-95D0-07A84387B585",
+        "Root",
+        "Butte1_Unlit_MI"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E7A50CD0-1C3B-4D12-95D0-07A84387B585",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "EC5B4C4A-4E86-40E9-947A-80A7F59245F4" : {
+    "objectMetadataList" : [
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_Start"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root",
+        "PhysicsRoot",
+        "Level"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_2",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_3",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_1",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_Start",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "TutorialLevelAssets2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Skybox"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root",
+        "PhysicsRoot",
+        "Skybox"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EC5B4C4A-4E86-40E9-947A-80A7F59245F4",
+        "Root_Scene_Tutorial_2",
+        "PhysicsRoot",
+        "Level",
+        "SizeAdjust",
+        "yOffset",
+        "TutorialLevel",
+        "SpeechBubbleTriggers",
+        "SpeechBubble_3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "EE3B7FE0-8309-418A-98CF-203A95D0B673" : {
+    "objectMetadataList" : [
+      [
+        "EE3B7FE0-8309-418A-98CF-203A95D0B673",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "EF8A97E5-43CA-440D-9173-12AD2798A0C4" : {
+    "objectMetadataList" : [
+      [
+        "EF8A97E5-43CA-440D-9173-12AD2798A0C4",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EF8A97E5-43CA-440D-9173-12AD2798A0C4",
+        "Root",
+        "a"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "F5023681-5693-4DC3-83B0-8925CB4772F5" : {
+    "objectMetadataList" : [
+      [
+        "F5023681-5693-4DC3-83B0-8925CB4772F5",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F5023681-5693-4DC3-83B0-8925CB4772F5",
+        "Root",
+        "SpeechBubble"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F5023681-5693-4DC3-83B0-8925CB4772F5",
+        "Root",
+        "SpeechBubble",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "F5AF5DA0-384F-412A-AA2F-1619C98CA55E" : {
+    "objectMetadataList" : [
+      [
+        "F5AF5DA0-384F-412A-AA2F-1619C98CA55E",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}

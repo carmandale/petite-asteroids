@@ -1,0 +1,63 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467.0.0.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["DistantTerrain_Container", "DistantTerrain_MI", "Ground_Container", "Ground_Unlit_MI"]
+    def "Ground_Container" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @../SourceAssets/Models/Ground_Container.usdc@
+    )
+    {
+        rel material:binding = </Root/Ground_Unlit_MI> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Ground_Unlit_MI" (
+        active = true
+        references = @../Materials/MainMaterials.usda@</Root/MainMaterials/Unlit_MM>
+    )
+    {
+        asset inputs:NormalAO = @../SourceAssets/Textures/Ground_nao.png@
+        asset inputs:Unlit_Color_Tex = @../SourceAssets/Textures/Ground_uc.png@
+    }
+
+    def "DistantTerrain_Container" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @../SourceAssets/Models/DistantTerrain_Container.usdc@
+    )
+    {
+        rel material:binding = </Root/DistantTerrain_MI> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "DistantTerrain_MI" (
+        active = true
+        references = @../Materials/MainMaterials.usda@</Root/MainMaterials/DistantTerrain_MM>
+    )
+    {
+        color3f inputs:SkydomeColor = (0.7921569, 0.27058825, 0.15294118) (
+            colorSpace = "lin_srgb"
+        )
+    }
+}
+

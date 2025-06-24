@@ -1,0 +1,415 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (469.0.0.0.1)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "Butte1_Boundary" (
+        active = true
+        prepend references = @../SourceAssets/Models/Butte1_Boundary.usdc@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Butte2_Boundary" (
+        active = true
+        prepend references = @../SourceAssets/Models/Butte2_Boundary.usdc@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Butte3_Boundary" (
+        active = true
+        prepend references = @../SourceAssets/Models/Butte3_Boundary.usdc@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Butte4_Boundary" (
+        active = true
+        prepend references = @../SourceAssets/Models/Butte4_Boundary.usdc@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Butte5_Boundary" (
+        active = true
+        prepend references = @../SourceAssets/Models/Butte5_Boundary.usdc@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Platforms_Container" (
+        active = true
+        prepend references = @../SourceAssets/Models/Platforms_Container.usdc@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Platforms"
+        {
+            over "Platform_01_0"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_001_13"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (1.1805276e-10, -5.4210115e-20, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 5.902638e-11, -2.7105058e-20, 1.5999135e-30)
+                    float3 xformOp:scale = (1.0000001, 1, 1.0000001)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_001_13" (
+                    active = false
+                    customData = {
+                        float3 rotationEulerHint = (0, -2.775558e-17, 9.313225e-10)
+                    }
+                )
+                {
+                    quatf xformOp:orient = (1, 6.4623485e-27, -1.387779e-17, 4.6566126e-10)
+                    float3 xformOp:scale = (0.99999994, 1, 1)
+                    double3 xformOp:translate = (2.9802322387695312e-8, 2.9802322387695312e-8, -1.862645149230957e-9)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            over "Platform_13_12"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_013_25"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (0, 0, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (0.99999994, 1, 1)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_013_25" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_12_11"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_012_24"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (0, 0, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (0.99999994, 0.9999999, 0.99999994)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_012_24" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_11_10"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_011_23"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (0, 0, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (0.9999999, 0.9999997, 0.9999999)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_011_23" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_10_9"
+            {
+                reorder nameChildren = ["Platform_10_Boundary", "Platform_Boundary", "PlatformA_loc_010_22"]
+                def "Platform_Boundary" (
+                    active = false
+                    customData = {
+                        float3 rotationEulerHint = (-2.2737373e-13, -3.388132e-21, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, -1.1368686e-13, -1.694066e-21, -1.9259306e-34)
+                    float3 xformOp:scale = (0.9999999, 1.0000001, 0.99999976)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_010_22" (
+                    active = false
+                )
+                {
+                }
+
+                def "Platform_10_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (-2.273737e-13, 0.000009655955, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_10_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, -1.1368685e-13, 0.0000048279776, 5.4887756e-19)
+                    float3 xformOp:scale = (0.9999999, 1.0000001, 0.99999976)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            over "Platform_09_8"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_009_21"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (0, 0, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 0.99999994)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_009_21" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_08_7"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_008_20"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (-3.7464054e-9, -1.1102232e-16, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, -1.8732027e-9, -5.551116e-17, -1.0398365e-25)
+                    float3 xformOp:scale = (0.99999994, 0.99999994, 0.9999999)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_008_20" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_07_6"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_007_19"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (-1.5388434e-8, 4.440892e-16, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, -7.694217e-9, 2.220446e-16, 1.7084593e-24)
+                    float3 xformOp:scale = (0.9999998, 0.99999994, 1)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_007_19" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_06_5"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_006_18"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (-3.734773e-9, -1.1102229e-16, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, -1.8673865e-9, -5.5511145e-17, -1.0366076e-25)
+                    float3 xformOp:scale = (0.99999994, 1, 0.9999999)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_006_18" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_05_4"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_005_17"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (3.7493195e-9, 1.1102232e-16, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 1.8746598e-9, 5.551116e-17, -1.0406453e-25)
+                    float3 xformOp:scale = (0.99999994, 0.99999994, 1)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_005_17" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_04_3"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_004_16"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (0, 0, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1.0000001, 0.99999994, 1.0000001)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_004_16" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_03_2"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_003_15"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (-1.1715888e-10, -2.1684043e-19, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, -5.857944e-11, -1.0842022e-19, -6.3511956e-30)
+                    float3 xformOp:scale = (1, 1, 0.99999994)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_003_15" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Platform_02_1"
+            {
+                reorder nameChildren = ["Platform_Boundary", "PlatformA_loc_002_14"]
+                def "Platform_Boundary" (
+                    active = true
+                    customData = {
+                        float3 rotationEulerHint = (1.8797022e-9, -5.551115e-17, 0)
+                    }
+                    prepend references = @../SourceAssets/Models/Platform_Boundary.usdc@
+                )
+                {
+                    quatf xformOp:orient = (1, 9.398511e-10, -2.7755576e-17, 2.6086108e-26)
+                    float3 xformOp:scale = (1, 1, 0.99999994)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                over "PlatformA_loc_002_14" (
+                    active = false
+                )
+                {
+                }
+            }
+        }
+    }
+}
+

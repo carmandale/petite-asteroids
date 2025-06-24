@@ -1,0 +1,95 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467.0.0.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Platforms_Container", "StaticLevelMaterials", "Platforms_PBR_Temp_MI"]
+    def "Platforms_Container" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @../SourceAssets/Models/Platforms_Container.usdc@
+    )
+    {
+        rel material:binding = </Root/Platforms_PBR_Temp_MI> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Platform_01"
+        {
+        }
+
+        over "Platform_02"
+        {
+        }
+
+        over "Platform_03"
+        {
+        }
+
+        over "Platform_04"
+        {
+        }
+
+        over "Platform_05"
+        {
+        }
+
+        over "Platform_06"
+        {
+        }
+
+        over "Platform_07"
+        {
+        }
+
+        over "Platform_08"
+        {
+        }
+
+        over "Platform_09"
+        {
+        }
+
+        over "Platform_10"
+        {
+        }
+
+        over "Platform_11"
+        {
+        }
+
+        over "Platform_12"
+        {
+        }
+
+        over "Platform_13"
+        {
+        }
+    }
+
+    def "Platforms_PBR_Temp_MI" (
+        active = true
+        references = @../Materials/MainMaterials.usda@</Root/MainMaterials/Unlit_MM>
+    )
+    {
+        color3f inputs:BaseColor = (0.52156866, 0.23137255, 0.101960786) (
+            colorSpace = "lin_srgb"
+        )
+        asset inputs:NormalAO = @../SourceAssets/Textures/Platforms_nao.png@
+        float inputs:Roughness = 0.8
+        asset inputs:Unlit_Color_Tex = @../SourceAssets/Textures/Platforms_uc.png@
+        bool inputs:UseUV1 = 0
+    }
+}
+

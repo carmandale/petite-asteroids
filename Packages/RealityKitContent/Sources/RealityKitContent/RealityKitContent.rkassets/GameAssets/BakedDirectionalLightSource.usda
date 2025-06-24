@@ -1,0 +1,70 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["BakedDirectionalLightSource_Container", "Material"]
+    def "BakedDirectionalLightSource_Container" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @../SourceAssets/Models/BakedDirectionalLightSource.usdc@
+    )
+    {
+        rel material:binding = </Root/Material> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "DirectionalLightProxy"
+        {
+            over "Cube" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/PBR_Packed_MM> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+
+        over "BakedDirectionalLightSource"
+        {
+            over "BakedDirectionalLightSource_Transform"
+            {
+                over "DirectionalLight"
+                {
+                    def RealityKitCustomComponent "RealityKitContent_DirectionalLightFaderComponent"
+                    {
+                        uniform token info:id = "RealityKitContent.DirectionalLightFaderComponent"
+                    }
+                }
+            }
+        }
+    }
+
+    def Material "Material"
+    {
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        prepend token outputs:surface.connect = </Root/Material/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            token outputs:surface
+        }
+    }
+}
+

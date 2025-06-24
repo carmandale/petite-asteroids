@@ -1,0 +1,50 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467.0.0.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Butte4_Container", "Butte4_Unlit_MI"]
+    def "Butte4_Container" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @../SourceAssets/Models/Butte4_Container.usdc@
+    )
+    {
+        rel material:binding = </Root/Butte4_Unlit_MI> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Butte4"
+        {
+            over "Butte4_0"
+            {
+                over "Butte4_msh" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                }
+            }
+        }
+    }
+
+    def "Butte4_Unlit_MI" (
+        active = true
+        references = @../Materials/MainMaterials.usda@</Root/MainMaterials/Unlit_MM>
+    )
+    {
+        asset inputs:NormalAO = @../SourceAssets/Textures/Butte4_nao.png@
+        asset inputs:Unlit_Color_Tex = @../SourceAssets/Textures/Butte4_uc.png@
+    }
+}
+

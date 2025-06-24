@@ -1,0 +1,36 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467.0.0.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["RockFriends_Dubz_Container", "CharacterMaterials"]
+    def "RockFriends_Dubz_Container" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        prepend references = @../SourceAssets/Models/RockFriends_Dubz_Container.usdc@
+    )
+    {
+        rel material:binding = </Root/RockFriend_PBR_Packed_MI> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "RockFriend_PBR_Packed_MI" (
+        active = true
+        prepend references = @../Materials/RockFriendMaterial.usda@</Root/RockFriend_PBR_Packed_MI>
+    )
+    {
+    }
+}
+

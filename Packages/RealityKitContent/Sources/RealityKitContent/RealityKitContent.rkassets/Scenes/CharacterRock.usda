@@ -1,0 +1,613 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467.0.0.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["RockCollector", "CharacterSquash", "PBR_Packed_MI", "EyesRotation", "EyeBallMaterial", "CharacterMaterial", "PupilMaterial"]
+    def Material "CharacterMaterial"
+    {
+        asset inputs:Basecolor_Roughness_Tex = @../SourceAssets/Textures/CharacterRock_bcr.png@ (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-1245.4198, -497.46378)
+                    int stackingOrderInSubgraph = 3044
+                }
+            }
+        )
+        float3 inputs:direction = (1, 1, 0) (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-1071.513, 396.52133)
+                    int stackingOrderInSubgraph = 3221
+                }
+            }
+        )
+        float inputs:intensity = 0 (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-622.40045, 130.07388)
+                    int stackingOrderInSubgraph = 3221
+                }
+            }
+        )
+        asset inputs:Normal_AO_Tex = @../SourceAssets/Textures/CharacterRock_nao.png@ (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-1609.98, -167.44107)
+                    int stackingOrderInSubgraph = 3044
+                }
+            }
+        )
+        token outputs:mtlx:surface.connect = </Root/CharacterMaterial/PBRSurface.outputs:out>
+        token outputs:realitykit:vertex.connect = </Root/CharacterMaterial/GeometryModifier.outputs:out>
+        float2 ui:nodegraph:node:pos = (-1157.8976, 741.29376)
+        int ui:nodegraph:node:stackingOrder = 1
+        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (335.25, 100.5)
+
+        def Shader "Multiply_2"
+        {
+            uniform token info:id = "ND_multiply_float"
+            float inputs:in1.connect = </Root/CharacterMaterial/Multiply.outputs:out>
+            float inputs:in2.connect = </Root/CharacterMaterial/DotProduct.outputs:out>
+            float outputs:out
+            float2 ui:nodegraph:node:pos = (-382.99808, 149.53873)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "Normalize_1"
+        {
+            uniform token info:id = "ND_normalize_vector3"
+            float3 inputs:in.connect = </Root/CharacterMaterial/Position.outputs:out>
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-870.2274, 280.25925)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "Normalize"
+        {
+            uniform token info:id = "ND_normalize_vector3"
+            float3 inputs:in.connect = </Root/CharacterMaterial.inputs:direction>
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-867.0606, 366.83176)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "DotProduct"
+        {
+            uniform token info:id = "ND_dotproduct_vector3"
+            float3 inputs:in1.connect = </Root/CharacterMaterial/Normalize_1.outputs:out>
+            float3 inputs:in2.connect = </Root/CharacterMaterial/Normalize.outputs:out>
+            float outputs:out
+            float2 ui:nodegraph:node:pos = (-667.7015, 323.9166)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "Multiply_1"
+        {
+            uniform token info:id = "ND_multiply_vector3FA"
+            float3 inputs:in1.connect = </Root/CharacterMaterial/Normalize.outputs:out>
+            float inputs:in2.connect = </Root/CharacterMaterial/Multiply_2.outputs:out>
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-264.209, 226.92154)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "GeometryModifier"
+        {
+            uniform token info:id = "ND_realitykit_geometrymodifier_2_0_vertexshader"
+            float3 inputs:bitangent
+            color4f inputs:color
+            float3 inputs:modelPositionOffset.connect = </Root/CharacterMaterial/Multiply_1.outputs:out>
+            float3 inputs:normal
+            float2 inputs:uv0
+            float2 inputs:uv1
+            float4 inputs:uv2
+            float4 inputs:uv3
+            float4 inputs:uv4
+            float4 inputs:uv5
+            float4 inputs:uv6
+            float4 inputs:uv7
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (-8.1660595, 307.89426)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "Position"
+        {
+            uniform token info:id = "ND_position_vector3"
+            string inputs:space = "model"
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-1058.3838, 216.30612)
+            int ui:nodegraph:node:stackingOrder = 3221
+            string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:space"]
+        }
+
+        def Shader "Multiply"
+        {
+            uniform token info:id = "ND_multiply_float"
+            float inputs:in1.connect = </Root/CharacterMaterial.inputs:intensity>
+            float inputs:in2 = 0.01
+            float outputs:out
+            float2 ui:nodegraph:node:pos = (-491.7198, 127.974754)
+            int ui:nodegraph:node:stackingOrder = 3221
+        }
+
+        def Shader "PBRSurface"
+        {
+            uniform token info:id = "ND_realitykit_pbr_surfaceshader"
+            float inputs:ambientOcclusion.connect = </Root/CharacterMaterial/NormalsAO.outputs:outw>
+            color3f inputs:baseColor.connect = </Root/CharacterMaterial/Combine3.outputs:out>
+            float3 inputs:clearcoatNormal
+            color3f inputs:emissiveColor
+            bool inputs:hasPremultipliedAlpha
+            float inputs:metallic
+            float3 inputs:normal.connect = </Root/CharacterMaterial/NormalMapDecode.outputs:out>
+            float inputs:opacity
+            float inputs:roughness.connect = </Root/CharacterMaterial/Separate4.outputs:outa>
+            float inputs:specular = 0.5
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (-85.42796, -222.42009)
+            int ui:nodegraph:node:stackingOrder = 3055
+        }
+
+        def Shader "Combine3" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/Combine3>
+        )
+        {
+            uniform token info:id = "ND_combine3_color3"
+            float inputs:in1.connect = </Root/CharacterMaterial/Separate4.outputs:outr>
+            float inputs:in2.connect = </Root/CharacterMaterial/Separate4.outputs:outg>
+            float inputs:in3.connect = </Root/CharacterMaterial/Separate4.outputs:outb>
+            float2 ui:nodegraph:node:pos = (-524.43536, -392.51566)
+            int ui:nodegraph:node:stackingOrder = 3044
+        }
+
+        def Shader "Image_2" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/Image_1>
+        )
+        {
+            uniform token info:id = "ND_image_vector4"
+            asset inputs:file.connect = </Root/CharacterMaterial.inputs:Normal_AO_Tex>
+            float2 ui:nodegraph:node:pos = (-1359.4249, -136.2535)
+            int ui:nodegraph:node:stackingOrder = 3044
+        }
+
+        def Shader "Image_3" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/Image>
+        )
+        {
+            uniform token info:id = "ND_image_color4"
+            asset inputs:file.connect = </Root/CharacterMaterial.inputs:Basecolor_Roughness_Tex>
+            float2 ui:nodegraph:node:pos = (-1018.231, -464.1798)
+            int ui:nodegraph:node:stackingOrder = 3044
+        }
+
+        def Shader "NormalsAO" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/NormalsAO>
+        )
+        {
+            uniform token info:id = "ND_separate4_vector4"
+            float4 inputs:in.connect = </Root/CharacterMaterial/Image_2.outputs:out>
+            float2 ui:nodegraph:node:pos = (-1116.2574, -102.55436)
+            int ui:nodegraph:node:stackingOrder = 3044
+        }
+
+        def Shader "Normals" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/Normals>
+        )
+        {
+            uniform token info:id = "ND_combine3_vector3"
+            float inputs:in1.connect = </Root/CharacterMaterial/NormalsAO.outputs:outx>
+            float inputs:in2.connect = </Root/CharacterMaterial/NormalsAO.outputs:outy>
+            float inputs:in3.connect = </Root/CharacterMaterial/NormalsAO.outputs:outz>
+            float2 ui:nodegraph:node:pos = (-875.99176, -197.33684)
+            int ui:nodegraph:node:stackingOrder = 3044
+        }
+
+        def Shader "NormalMapDecode" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/NormalMapDecode>
+        )
+        {
+            uniform token info:id = "ND_normal_map_decode"
+            float3 inputs:in.connect = </Root/CharacterMaterial/Normals.outputs:out>
+            float2 ui:nodegraph:node:pos = (-599.27924, -211.37918)
+            int ui:nodegraph:node:stackingOrder = 3057
+        }
+
+        def Shader "Separate4" (
+            references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM/Separate4>
+        )
+        {
+            uniform token info:id = "ND_separate4_color4"
+            color4f inputs:in.connect = </Root/CharacterMaterial/Image_3.outputs:out>
+            float2 ui:nodegraph:node:pos = (-810.12115, -400.06967)
+            int ui:nodegraph:node:stackingOrder = 3044
+        }
+    }
+
+    def Xform "RockCollector" (
+        active = true
+    )
+    {
+        float2 ui:nodegraph:node:pos = (-353.0067, -10.030273)
+        int ui:nodegraph:node:stackingOrder = 1
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Trigger"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (0, 0, 0)
+                float radius = 1
+                token shapeType = "Sphere"
+
+                def RealityKitStruct "pose"
+                {
+                }
+            }
+        }
+
+        def RealityKitCustomComponent "RealityKitContent_RockCollectorComponent"
+        {
+            uniform token info:id = "RealityKitContent.RockCollectorComponent"
+        }
+    }
+
+    def Material "EyeBallMaterial"
+    {
+        token outputs:mtlx:surface.connect = </Root/EyeBallMaterial/PreviewSurface.outputs:out>
+        token outputs:realitykit:vertex
+        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (335.25, 100.5)
+
+        def Shader "PreviewSurface"
+        {
+            uniform token info:id = "ND_UsdPreviewSurface_surfaceshader"
+            float inputs:clearcoat = 1
+            float inputs:clearcoatRoughness = 0.5
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_displayp3"
+            )
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (-119.69141, -35.914062)
+            int ui:nodegraph:node:stackingOrder = 5
+        }
+    }
+
+    def Material "PupilMaterial"
+    {
+        token outputs:mtlx:surface.connect = </Root/PupilMaterial/PreviewSurface.outputs:out>
+        token outputs:realitykit:vertex
+        float2 ui:nodegraph:node:pos = (215.75, 104.5)
+        int ui:nodegraph:node:stackingOrder = 1
+        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (335.25, 100.5)
+
+        def Shader "PreviewSurface"
+        {
+            uniform token info:id = "ND_UsdPreviewSurface_surfaceshader"
+            float inputs:clearcoat = 0.1
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0, 0, 0) (
+                colorSpace = "srgb_displayp3"
+            )
+            float inputs:metallic = 0
+            float inputs:roughness = 1
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (-119.828125, -44.05078)
+            int ui:nodegraph:node:stackingOrder = 8
+        }
+    }
+
+    def Xform "EyesRotation" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 0, 0)
+        }
+    )
+    {
+        quatf xformOp:orient = (1, 0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Xform "EyesContainer"
+        {
+            reorder nameChildren = ["LeftEyeContainer", "RightEyeContainer"]
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0.058083296, 0.58557093)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Xform "LeftEyeContainer" (
+                active = true
+            )
+            {
+                reorder nameChildren = ["EyeBall", "Pupil"]
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                float3 xformOp:translate = (-0.12360433, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Sphere "EyeBall" (
+                    active = true
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Root/EyeBallMaterial>
+                    double radius = 0.1
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 0.2)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Sphere "Pupil" (
+                    active = true
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Root/PupilMaterial> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double radius = 0.1
+                    float2 ui:nodegraph:node:pos = (20, 20)
+                    int ui:nodegraph:node:stackingOrder = 1
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (0.7, 0.7, 0.2)
+                    float3 xformOp:translate = (0.012386203, 0, 0.018997788)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            def Xform "RightEyeContainer" (
+                active = true
+            )
+            {
+                reorder nameChildren = ["EyeBall", "Pupil"]
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                float3 xformOp:translate = (0.18577605, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Sphere "EyeBall" (
+                    active = true
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Root/EyeBallMaterial>
+                    double radius = 0.1
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 0.2)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Sphere "Pupil" (
+                    active = true
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Root/PupilMaterial> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double radius = 0.1
+                    float2 ui:nodegraph:node:pos = (20, 20)
+                    int ui:nodegraph:node:stackingOrder = 1
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (0.7, 0.7, 0.2)
+                    float3 xformOp:translate = (-0.013647318, 0, 0.018997788)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+            }
+
+            def RealityKitComponent "HierarchicalFade"
+            {
+                uniform token info:id = "RealityKit.HierarchicalFade"
+                float opacity = 1
+            }
+        }
+    }
+
+    def Xform "CharacterSquash" (
+        active = true
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Xform "CharacterRotation" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            customData = {
+                float3 rotationEulerHint = (1.2860535, 5.1222738e-8, -3.5527137e-15)
+            }
+        )
+        {
+            reorder nameChildren = ["CharacterRock", "object"]
+            rel material:binding = </Root/PBR_Packed_MI> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+            quatf xformOp:orient = (0.8002845, 0.59962046, 2.049638e-8, -1.5357102e-8)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def "CharacterRock" (
+                active = true
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @../GameAssets/CharacterRock.usda@
+            )
+            {
+                rel material:binding = </Root/CharacterMaterial> (
+                    bindMaterialAs = "strongerThanDescendants"
+                )
+                quatf xformOp:orient = (0.80028456, -0.5996204, 0, 0)
+                float3 xformOp:scale = (50, 50, 50)
+                float3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                over "CharacterRock_Container" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Root/CharacterMaterial> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+
+                    over "CharacterRock" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Root/CharacterMaterial> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+
+                        over "CharacterRock_msh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Root/CharacterMaterial> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+
+                over "CharacterRock_PBR_Packed_MM" (
+                    active = false
+                )
+                {
+                }
+            }
+        }
+    }
+
+    def "PBR_Packed_MI" (
+        active = true
+        references = @../Materials/MainMaterials.usda@</Root/MainMaterials/PBR_Packed_MM>
+    )
+    {
+        asset inputs:Basecolor_Roughness_Tex = @../SourceAssets/Textures/CharacterRock_bcr.png@
+        float3 inputs:direction = (1, 1, 0) (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-926.1882, 833.5217)
+                    int stackingOrderInSubgraph = 5601
+                }
+            }
+        )
+        float inputs:intensity = 0 (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-477.0756, 567.0742)
+                    int stackingOrderInSubgraph = 5601
+                }
+            }
+        )
+        asset inputs:Normal_AO_Tex = @../SourceAssets/Textures/CharacterRock_nao.png@
+        token outputs:realitykit:vertex.connect = </Root/PBR_Packed_MI/GeometryModifier.outputs:out>
+
+        def Shader "Multiply_11"
+        {
+            uniform token info:id = "ND_multiply_float"
+            float inputs:in1.connect = </Root/PBR_Packed_MI.inputs:intensity>
+            float inputs:in2 = 0.01
+            float outputs:out
+            float2 ui:nodegraph:node:pos = (-346.39493, 564.9751)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "DotProduct"
+        {
+            uniform token info:id = "ND_dotproduct_vector3"
+            float3 inputs:in1.connect = </Root/PBR_Packed_MI/Normalize_1.outputs:out>
+            float3 inputs:in2.connect = </Root/PBR_Packed_MI/Normalize.outputs:out>
+            float outputs:out
+            float2 ui:nodegraph:node:pos = (-522.37665, 760.917)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "Multiply_9"
+        {
+            uniform token info:id = "ND_multiply_float"
+            float inputs:in1.connect = </Root/PBR_Packed_MI/Multiply_11.outputs:out>
+            float inputs:in2.connect = </Root/PBR_Packed_MI/DotProduct.outputs:out>
+            float outputs:out
+            float2 ui:nodegraph:node:pos = (-237.67326, 586.53906)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "GeometryModifier"
+        {
+            uniform token info:id = "ND_realitykit_geometrymodifier_2_0_vertexshader"
+            float3 inputs:bitangent
+            color4f inputs:color
+            float3 inputs:modelPositionOffset.connect = </Root/PBR_Packed_MI/Multiply_10.outputs:out>
+            float3 inputs:normal
+            float2 inputs:uv0
+            float2 inputs:uv1
+            float4 inputs:uv2
+            float4 inputs:uv3
+            float4 inputs:uv4
+            float4 inputs:uv5
+            float4 inputs:uv6
+            float4 inputs:uv7
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (137.15877, 744.89465)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "Normalize_1"
+        {
+            uniform token info:id = "ND_normalize_vector3"
+            float3 inputs:in.connect = </Root/PBR_Packed_MI/Position_1.outputs:out>
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-724.9026, 717.25964)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "Normalize"
+        {
+            uniform token info:id = "ND_normalize_vector3"
+            float3 inputs:in.connect = </Root/PBR_Packed_MI.inputs:direction>
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-721.7358, 803.83215)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "Multiply_10"
+        {
+            uniform token info:id = "ND_multiply_vector3FA"
+            float3 inputs:in1.connect = </Root/PBR_Packed_MI/Normalize.outputs:out>
+            float inputs:in2.connect = </Root/PBR_Packed_MI/Multiply_9.outputs:out>
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-118.8842, 663.9219)
+            int ui:nodegraph:node:stackingOrder = 5601
+        }
+
+        def Shader "Position_1"
+        {
+            uniform token info:id = "ND_position_vector3"
+            string inputs:space = "model"
+            float3 outputs:out
+            float2 ui:nodegraph:node:pos = (-913.059, 653.3065)
+            int ui:nodegraph:node:stackingOrder = 5601
+            string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:space"]
+        }
+    }
+}
+

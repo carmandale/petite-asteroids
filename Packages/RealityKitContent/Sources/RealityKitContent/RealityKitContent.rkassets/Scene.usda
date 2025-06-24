@@ -1,0 +1,2373 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+reorder rootPrims = ["Root", "GridMaterial"]
+
+def Xform "Root" (
+    customData = {
+        float3 rotationEulerHint = (0, 0, 0)
+    }
+)
+{
+    reorder nameChildren = ["PhysicsRoot", "ImageBasedLightReceiver", "RCP_BehaviorsContainer", "OnNotification", "PlayOutro", "LevelSortingGroup", "OnIntro"]
+    rel material:binding = None (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+    quatf xformOp:orient = (1, 0, 0, 0)
+    float3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def Xform "PhysicsRoot" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["Background", "Level", "ExteriorLighting"]
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Xform "Background" (
+            active = true
+        )
+        {
+            reorder nameChildren = ["SizeAdjust", "yOffset", "Ground_Background", "Skydome_Background"]
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Xform "SizeAdjust" (
+                active = true
+            )
+            {
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (50, 50, 50)
+                float3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "yOffset" (
+                    active = true
+                )
+                {
+                    float2 ui:nodegraph:node:pos = (20, 20)
+                    int ui:nodegraph:node:stackingOrder = 1
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "StaticLevel" (
+                        active = true
+                        references = @Scenes/StaticLevel.usda@
+                    )
+                    {
+                        float3 xformOp:scale = (1, 1, 1)
+
+                        over "BakedDirectionalLightSource" (
+                            active = false
+                        )
+                        {
+                        }
+
+                        over "Platforms" (
+                            active = false
+                        )
+                        {
+                        }
+
+                        over "Butte_2" (
+                            active = false
+                        )
+                        {
+                        }
+
+                        over "Butte_3" (
+                            active = false
+                        )
+                        {
+                        }
+
+                        over "Butte_4" (
+                            active = false
+                        )
+                        {
+                        }
+
+                        over "Butte_5" (
+                            active = false
+                        )
+                        {
+                        }
+                    }
+                }
+            }
+
+            def RealityKitCustomComponent "RealityKitContent_ModelFaderMarkerComponent"
+            {
+                uniform token info:id = "RealityKitContent.ModelFaderMarkerComponent"
+            }
+        }
+
+        def Xform "Level" (
+            active = true
+        )
+        {
+            reorder nameChildren = ["Skydome_Level", "SizeAdjust"]
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Xform "SizeAdjust" (
+                active = true
+            )
+            {
+                reorder nameChildren = ["yOffset", "WinGameTrigger", "SpeechBubbleTriggers", "LevelRevisions__RemoveWhenNewPlatformsAreIn", "Checkpoints", "RockCollectibles", "ButteOld", "SizeRefenrence", "CharacterSpawnPoint_Origin"]
+                float2 ui:nodegraph:node:pos = (-276.2193, 18.814056)
+                int ui:nodegraph:node:stackingOrder = 1
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (50, 50, 50)
+                float3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "yOffset" (
+                    active = true
+                )
+                {
+                    reorder nameChildren = ["LevelVisuals", "LevelCollider", "LevelBoundary", "VolumeBoundary", "WinGameCollider", "CharacterFinalPosition", "SpeechBubbleTriggers", "Checkpoints", "RockCollectiblesMainPath", "RockCollectiblesSecrets", "CharacterSpawnPoint_Origin", "ParticleEmitterDust", "RCP_BehaviorsContainer", "OnAddedToScene"]
+                    quatf xformOp:orient = (1, 0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    float3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def Xform "LevelVisuals" (
+                        active = true
+                    )
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "StaticLevel" (
+                            active = true
+                            references = @Scenes/StaticLevel.usda@
+                        )
+                        {
+                            float3 xformOp:scale = (1, 1, 1)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            over "Skydome"
+                            {
+                                over "Skydome"
+                                {
+                                    over "Skydome_msh"
+                                    {
+                                        over "Sphere_003"
+                                        {
+                                            def RealityKitCustomComponent "RealityKitContent_IgnoreCompoundCollisionMarkerComponent"
+                                            {
+                                                uniform token info:id = "RealityKitContent.IgnoreCompoundCollisionMarkerComponent"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Platforms"
+                            {
+                                float3 xformOp:translate = (0, 0, 0)
+
+                                over "Platforms_Container"
+                                {
+                                    over "Platforms"
+                                    {
+                                        over "Platform_01_0"
+                                        {
+                                            over "PlatformA_loc_001_13"
+                                            {
+                                                over "PlatformA_msh_002"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.14618254, 0.14684543, 0.035614222)
+                                                            float radius = 0.073422715
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.00030732155, 0.0019518435, -0.010571884)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 4
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_02_1"
+                                        {
+                                            over "PlatformA_loc_002_14"
+                                            {
+                                                over "PlatformB_msh_002"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15936077, 0.15316859, 0.05771422)
+                                                            float radius = 0.07968038
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0043396354, -0.0020540208, -0.017955305)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 7
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_03_2"
+                                        {
+                                            over "PlatformA_loc_003_15"
+                                            {
+                                                over "PlatformC_msh_002"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15031588, 0.15497082, 0.049919605)
+                                                            float radius = 0.07748541
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0010438561, 0.0022195466, -0.023896456)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 8
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_04_3"
+                                        {
+                                            over "PlatformA_loc_004_16"
+                                            {
+                                                over "PlatformC_msh_003"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15031588, 0.15497082, 0.049919605)
+                                                            float radius = 0.07748541
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0010438561, 0.0022195466, -0.023896456)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 5
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_05_4"
+                                        {
+                                            over "PlatformA_loc_005_17"
+                                            {
+                                                over "PlatformA_msh_003"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.14618254, 0.14684543, 0.035614222)
+                                                            float radius = 0.073422715
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.00030732155, 0.0019518435, -0.010571884)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 1
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_06_5"
+                                        {
+                                            over "PlatformA_loc_006_18"
+                                            {
+                                                over "PlatformC_msh_004"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15031588, 0.15497082, 0.049919605)
+                                                            float radius = 0.07748541
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0010438561, 0.0022195466, -0.023896456)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 12
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_07_6"
+                                        {
+                                            over "PlatformA_loc_007_19"
+                                            {
+                                                over "PlatformB_msh_003A"
+                                                {
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 11
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.1566776, 0.053557426, 0.1554735)
+                                                            float radius = 0.0783388
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (-5.9604645e-8, -0.01990141, 0.00021372363)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_08_7"
+                                        {
+                                            over "PlatformA_loc_008_20"
+                                            {
+                                                over "PlatformB_msh_004"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15936077, 0.15316859, 0.05771422)
+                                                            float radius = 0.07968038
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0043396354, -0.0020540208, -0.017955305)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 0
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_09_8"
+                                        {
+                                            over "PlatformA_loc_009_21"
+                                            {
+                                                over "PlatformC_msh_005"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15031588, 0.15497082, 0.049919605)
+                                                            float radius = 0.07748541
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0010438561, 0.0022195466, -0.023896456)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 6
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_10_9"
+                                        {
+                                            over "PlatformA_loc_010_22"
+                                            {
+                                                over "PlatformA_msh_004"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.14618254, 0.14684543, 0.035614222)
+                                                            float radius = 0.073422715
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.00030732155, 0.0019518435, -0.010571884)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 9
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_11_10"
+                                        {
+                                            over "PlatformA_loc_011_23"
+                                            {
+                                                over "PlatformB_msh_005"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15936077, 0.15316859, 0.05771422)
+                                                            float radius = 0.07968038
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0043396354, -0.0020540208, -0.017955305)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 2
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_12_11"
+                                        {
+                                            over "PlatformA_loc_012_24"
+                                            {
+                                                over "PlatformC_msh_006"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.15031588, 0.15497082, 0.049919605)
+                                                            float radius = 0.07748541
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.0010438561, 0.0022195466, -0.023896456)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 3
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        over "Platform_13_12"
+                                        {
+                                            over "PlatformA_loc_013_25"
+                                            {
+                                                over "PlatformA_msh_005"
+                                                {
+                                                    def RealityKitCustomComponent "RealityKitContent_PlatformAnimationMarkerComponent"
+                                                    {
+                                                        uniform token info:id = "RealityKitContent.PlatformAnimationMarkerComponent"
+                                                    }
+
+                                                    def RealityKitComponent "Collider"
+                                                    {
+                                                        uint group = 1
+                                                        uniform token info:id = "RealityKit.Collider"
+                                                        uint mask = 4294967295
+                                                        token type = "Default"
+
+                                                        def RealityKitStruct "Shape"
+                                                        {
+                                                            float3 extent = (0.14618254, 0.14684543, 0.035614222)
+                                                            float radius = 0.073422715
+                                                            token shapeType = "Sphere"
+
+                                                            def RealityKitStruct "pose"
+                                                            {
+                                                                float3 position = (0.00030732155, 0.0019518435, -0.010571884)
+                                                            }
+                                                        }
+                                                    }
+
+                                                    def RealityKitComponent "MeshSorting"
+                                                    {
+                                                        rel group = </Root/LevelSortingGroup>
+                                                        token info:id = "RealityKit.MeshSorting"
+                                                        int priorityInGroup = 10
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Butte_1"
+                            {
+                                over "Butte1_Container"
+                                {
+                                    over "Butte1"
+                                    {
+                                        over "Butte1_0"
+                                        {
+                                            over "Butte1_msh"
+                                            {
+                                                def RealityKitComponent "MeshSorting"
+                                                {
+                                                    rel group = </Root/LevelSortingGroup>
+                                                    token info:id = "RealityKit.MeshSorting"
+                                                    int priorityInGroup = 17
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Butte_2"
+                            {
+                                over "Butte2_Container"
+                                {
+                                    over "Butte2"
+                                    {
+                                        over "Butte2_0"
+                                        {
+                                            over "Butte2_msh"
+                                            {
+                                                def RealityKitComponent "MeshSorting"
+                                                {
+                                                    rel group = </Root/LevelSortingGroup>
+                                                    token info:id = "RealityKit.MeshSorting"
+                                                    int priorityInGroup = 16
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Butte_3"
+                            {
+                                over "Butte3_Container"
+                                {
+                                    over "Butte3"
+                                    {
+                                        over "Butte3_0"
+                                        {
+                                            over "Butte3_msh"
+                                            {
+                                                def RealityKitComponent "MeshSorting"
+                                                {
+                                                    rel group = </Root/LevelSortingGroup>
+                                                    token info:id = "RealityKit.MeshSorting"
+                                                    int priorityInGroup = 15
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Butte_4"
+                            {
+                                over "Butte4_Container"
+                                {
+                                    over "Butte4"
+                                    {
+                                        over "Butte4_0"
+                                        {
+                                            over "Butte4_msh"
+                                            {
+                                                def RealityKitComponent "MeshSorting"
+                                                {
+                                                    rel group = </Root/LevelSortingGroup>
+                                                    token info:id = "RealityKit.MeshSorting"
+                                                    int priorityInGroup = 14
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Butte_5"
+                            {
+                                over "Butte5_Container"
+                                {
+                                    over "Butte5"
+                                    {
+                                        over "Butte5_0"
+                                        {
+                                            over "Butte5_msh"
+                                            {
+                                                def RealityKitComponent "MeshSorting"
+                                                {
+                                                    rel group = </Root/LevelSortingGroup>
+                                                    token info:id = "RealityKit.MeshSorting"
+                                                    int priorityInGroup = 13
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "Ground"
+                            {
+                                over "Ground_Container"
+                                {
+                                    over "Ground"
+                                    {
+                                        over "Ground_msh"
+                                        {
+                                            def RealityKitComponent "MeshSorting"
+                                            {
+                                                rel group = </Root/LevelSortingGroup>
+                                                token info:id = "RealityKit.MeshSorting"
+                                                int priorityInGroup = 18
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "BakedDirectionalLightSource"
+                            {
+                                def RealityKitComponent "HierarchicalFade"
+                                {
+                                    uniform token info:id = "RealityKit.HierarchicalFade"
+                                    float opacity = 0
+                                }
+
+                                over "BakedDirectionalLightSource_Container"
+                                {
+                                    over "BakedDirectionalLightSource"
+                                    {
+                                        over "BakedDirectionalLightSource_Transform"
+                                        {
+                                            def RealityKitCustomComponent "RealityKitContent_BakedDirectionalLightSourceComponent"
+                                            {
+                                                uniform token info:id = "RealityKitContent.BakedDirectionalLightSourceComponent"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_DropShadowReceiverComponent"
+                        {
+                            uniform token info:id = "RealityKitContent.DropShadowReceiverComponent"
+                        }
+                    }
+
+                    def Xform "SpeechBubbleTriggers"
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.02, 0.02, 0.02)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "SpeechBubbleTrigger" (
+                            active = true
+                            references = @Scenes/SpeechBubble.usda@
+                        )
+                        {
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-18.045235, 3.3256798, 3.4592395)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            over "SpeechBubble"
+                            {
+                                float3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                                def RealityKitCustomComponent "RealityKitContent_SpeechBubbleTriggerComponent"
+                                {
+                                    string characterText = "Where did everybody go?"
+                                    uniform token info:id = "RealityKitContent.SpeechBubbleTriggerComponent"
+                                }
+
+                                def RealityKitComponent "Collider"
+                                {
+                                    uint group = 1
+                                    uniform token info:id = "RealityKit.Collider"
+                                    uint mask = 4294967295
+                                    token type = "Default"
+
+                                    def RealityKitStruct "Shape"
+                                    {
+                                        float3 extent = (5, 5, 5)
+                                        token shapeType = "Box"
+
+                                        def RealityKitStruct "pose"
+                                        {
+                                        }
+                                    }
+                                }
+
+                                over "Sphere"
+                                {
+                                    def RealityKitComponent "HierarchicalFade"
+                                    {
+                                        uniform token info:id = "RealityKit.HierarchicalFade"
+                                        float opacity = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    def Xform "Checkpoints" (
+                        active = true
+                    )
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.02, 0.02, 0.02)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "Checkpoint" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0.1906578, -0.754554, -0.08477059)
+                            }
+                            references = @Scenes/Checkpoint.usda@
+                        )
+                        {
+                            quatf xformOp:orient = (0.92610484, 0.0728721, -0.3701379, -0.0041801557)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (5.7174373, 7.294079, 11.404394)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            over "Checkpoint"
+                            {
+                                over "Collider"
+                                {
+                                    over "Shape"
+                                    {
+                                        float3 extent = (7, 6, 4)
+                                    }
+                                }
+
+                                over "Sphere_Inactive"
+                                {
+                                    over "Material"
+                                    {
+                                        color3f inputs:FadeColorBottom (
+                                            customData = {
+                                                dictionary realitykit = {
+                                                    float2 positionInSubgraph = (-773.0154, -220.34505)
+                                                    int stackingOrderInSubgraph = 2357
+                                                }
+                                            }
+                                        )
+                                        color3f inputs:FadeColorTop (
+                                            customData = {
+                                                dictionary realitykit = {
+                                                    float2 positionInSubgraph = (-759.3528, -159.67204)
+                                                    int stackingOrderInSubgraph = 2357
+                                                }
+                                            }
+                                        )
+                                        float inputs:FadeMixAmount (
+                                            customData = {
+                                                dictionary realitykit = {
+                                                    float2 positionInSubgraph = (-766.187, -97.773636)
+                                                    int stackingOrderInSubgraph = 2357
+                                                }
+                                            }
+                                        )
+                                        float inputs:GradientEndY (
+                                            customData = {
+                                                dictionary realitykit = {
+                                                    float2 positionInSubgraph = (-758.89124, -38.312485)
+                                                    int stackingOrderInSubgraph = 2357
+                                                }
+                                            }
+                                        )
+                                        float inputs:GradientGamma (
+                                            customData = {
+                                                dictionary realitykit = {
+                                                    float2 positionInSubgraph = (-759.8418, 26.927658)
+                                                    int stackingOrderInSubgraph = 2357
+                                                }
+                                            }
+                                        )
+                                        float inputs:GradientStartY (
+                                            customData = {
+                                                dictionary realitykit = {
+                                                    float2 positionInSubgraph = (-758.4386, 87.90202)
+                                                    int stackingOrderInSubgraph = 2357
+                                                }
+                                            }
+                                        )
+                                    }
+                                }
+                            }
+                        }
+
+                        def "Checkpoint_1" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-0.15652537, -2.135629, 0)
+                            }
+                            references = @Scenes/Checkpoint.usda@
+                        )
+                        {
+                            float2 ui:nodegraph:node:pos = (20, 20)
+                            int ui:nodegraph:node:stackingOrder = 1
+                            quatf xformOp:orient = (-0.48056462, 0.03768729, 0.8734672, 0.06849987)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-6.9054003, 20.754393, 9.395245)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            over "Checkpoint"
+                            {
+                                over "Collider"
+                                {
+                                    over "Shape"
+                                    {
+                                        float3 extent = (6, 6, 6)
+                                    }
+                                }
+                            }
+                        }
+
+                        def "Checkpoint_2" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-0.2950704, -2.153498, 0.27817583)
+                            }
+                            references = @Scenes/Checkpoint.usda@
+                        )
+                        {
+                            float2 ui:nodegraph:node:pos = (40, 40)
+                            int ui:nodegraph:node:stackingOrder = 2
+                            quatf xformOp:orient = (-0.48245504, -0.051701967, 0.8721105, 0.0631447)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (7.4379625, 35.044167, 4.18762)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            over "Checkpoint"
+                            {
+                                over "Collider"
+                                {
+                                    over "Shape"
+                                    {
+                                        float3 extent = (8, 6, 6)
+                                    }
+                                }
+                            }
+                        }
+
+                        def "Checkpoint_3" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0.2985948, -0.76640505, -0.13851844)
+                            }
+                            references = @Scenes/Checkpoint.usda@
+                        )
+                        {
+                            float2 ui:nodegraph:node:pos = (20, 20)
+                            int ui:nodegraph:node:stackingOrder = 1
+                            quatf xformOp:orient = (0.9188045, 0.112037614, -0.37839398, -0.007989921)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (2.4382741, 43.029488, -7.4810843)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            over "Checkpoint"
+                            {
+                                over "Collider"
+                                {
+                                    over "Shape"
+                                    {
+                                        float3 extent = (7, 6, 7)
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    def Xform "RockCollectiblesMainPath"
+                    {
+                        reorder nameChildren = ["RockPickup_1", "RockPickup_2", "RockPickup_3", "RockPickup_4", "RockPickup_5", "RockPickup_6", "RockPickup_8", "RockPickup_9", "RockPickup_10", "RockCollectiblesSecrets", "RockPickup_7"]
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.019999998, 0.019999998, 0.019999998)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "RockPickup_1" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0, 0, 0.11352813)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_1"]
+                            float2 ui:nodegraph:node:pos = (20, 20)
+                            int ui:nodegraph:node:stackingOrder = 1
+                            quatf xformOp:orient = (0.99838936, 0, 0, 0.05673359)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-17.240887, 1.1938235, 13.068829)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Bowie", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Bowie" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Bowie.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "There you are!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_2" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-0.9398799, -1.9521782, 0.9749665)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_2"]
+                            float2 ui:nodegraph:node:pos = (40, 40)
+                            int ui:nodegraph:node:stackingOrder = 2
+                            quatf xformOp:orient = (0.61703503, 0.12177164, -0.7713302, -0.09741267)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-1.904115, 6.382845, 12.48617)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Cavity", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                float3 xformOp:translate = (0, 0, 0)
+
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Cavity" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Cavity.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "Hey friend!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_3" (
+                            active = true
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_3"]
+                            float2 ui:nodegraph:node:pos = (60, 60)
+                            int ui:nodegraph:node:stackingOrder = 3
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (8.64262, 14.587494, 1.5087526)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Curvy", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Curvy" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Curvy.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "I missed you."
+                                }
+                            }
+                        }
+
+                        def "RockPickup_4" (
+                            active = true
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_4"]
+                            float2 ui:nodegraph:node:pos = (80, 80)
+                            int ui:nodegraph:node:stackingOrder = 4
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (8.382323, 22.752596, 6.0028477)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Dottie", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Dottie" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Dottie.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "So high now!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_5" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0, 0, 0.97248447)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_5"]
+                            float2 ui:nodegraph:node:pos = (100, 100)
+                            int ui:nodegraph:node:stackingOrder = 5
+                            quatf xformOp:orient = (0.88409513, 0, 0, 0.46730697)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (4.854369, 33.34815, 10.712068)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Dubz", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Dubz" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Dubz.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "Stay close!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_6" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-0.9489031, 2.1866163e-7, -5.1076597e-8)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_6"]
+                            float2 ui:nodegraph:node:pos = (120, 120)
+                            int ui:nodegraph:node:stackingOrder = 6
+                            quatf xformOp:orient = (0.8895434, -0.45685062, 1.0892169e-7, 2.7230422e-8)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-13.485831, 40.97086, -1.904224)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Fleck", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Fleck" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Fleck.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "Nearly made it!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_7" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-1.5745313, 2.982442e-7, -1.7970486e-7)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_7"]
+                            float2 ui:nodegraph:node:pos = (140, 140)
+                            int ui:nodegraph:node:stackingOrder = 7
+                            quatf xformOp:orient = (0.70578504, -0.70842606, 1.6890195e-7, 4.2225487e-8)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-10.424491, 56.210068, -4.814971)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Moon", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Moon" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Moon.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "We did it!"
+                                }
+                            }
+                        }
+                    }
+
+                    def Xform "CharacterSpawnPoint_Origin" (
+                        active = true
+                    )
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        float3 xformOp:translate = (-0.35767996, 0.022478132, 0.07663212)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def Sphere "CharacterSpawnPoint" (
+                            active = true
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/CharacterSpawnPoint_Origin/CharacterSpawnPoint/DefaultMaterial>
+                            double radius = 0.5
+                            float2 ui:nodegraph:node:pos = (-276.2193, 18.814056)
+                            int ui:nodegraph:node:stackingOrder = 1
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (0.019999994, 0.019999994, 0.019999994)
+                            float3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def Material "DefaultMaterial"
+                            {
+                                token outputs:mtlx:surface
+                                token outputs:realitykit:vertex
+                                token outputs:surface.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/CharacterSpawnPoint_Origin/CharacterSpawnPoint/DefaultMaterial/DefaultSurfaceShader.outputs:surface>
+
+                                def Shader "DefaultSurfaceShader"
+                                {
+                                    uniform token info:id = "UsdPreviewSurface"
+                                    color3f inputs:diffuseColor = (0, 0.97680455, 0) (
+                                        colorSpace = "srgb_texture"
+                                    )
+                                    color3f inputs:emissiveColor = (0, 0.97680455, 0) (
+                                        colorSpace = "srgb_texture"
+                                    )
+                                    float inputs:opacity = 0.75
+                                    float inputs:roughness = 1
+                                    token outputs:surface
+                                }
+                            }
+
+                            def RealityKitCustomComponent "RealityKitContent_CharacterSpawnPointComponent"
+                            {
+                                uniform token info:id = "RealityKitContent.CharacterSpawnPointComponent"
+                            }
+                        }
+                    }
+
+                    def Xform "LevelBoundary" (
+                        active = true
+                    )
+                    {
+                        reorder nameChildren = ["VolumeBoundary", "StaticLevelBoundary", "RealityKitContent_CompoundCollisionMarkerComponent", "HierarchicalFade"]
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "StaticLevelBoundary" (
+                            active = true
+                            references = @Scenes/StaticLevelBoundary.usda@
+                        )
+                        {
+                            float3 xformOp:scale = (1, 1, 1)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_CompoundCollisionMarkerComponent"
+                        {
+                            bool deleteModel = 1
+                            token group = "levelBoundary"
+                            uniform token info:id = "RealityKitContent.CompoundCollisionMarkerComponent"
+                            token mask = "allSubtractingCollectedRock"
+                        }
+
+                        def RealityKitComponent "HierarchicalFade"
+                        {
+                            uniform token info:id = "RealityKit.HierarchicalFade"
+                            float opacity = 0
+                        }
+                    }
+
+                    def Sphere "CharacterFinalPosition" (
+                        active = true
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/CharacterFinalPosition/DefaultMaterial>
+                        double radius = 0.01
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        float3 xformOp:translate = (-0.33238783, 1.1402031, -0.0494258)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def Material "DefaultMaterial"
+                        {
+                            token outputs:mtlx:surface
+                            token outputs:realitykit:vertex
+                            token outputs:surface.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/CharacterFinalPosition/DefaultMaterial/DefaultSurfaceShader.outputs:surface>
+
+                            def Shader "DefaultSurfaceShader"
+                            {
+                                uniform token info:id = "UsdPreviewSurface"
+                                color3f inputs:diffuseColor = (0, 0.9914394, 1) (
+                                    colorSpace = "srgb_texture"
+                                )
+                                color3f inputs:emissiveColor = (0, 0.9914394, 1) (
+                                    colorSpace = "srgb_texture"
+                                )
+                                float inputs:roughness = 1
+                                token outputs:surface
+                            }
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_FinalRestingPointMarkerComponent"
+                        {
+                            uniform token info:id = "RealityKitContent.FinalRestingPointMarkerComponent"
+                        }
+                    }
+
+                    def Xform "RockCollectiblesSecrets" (
+                        active = true
+                    )
+                    {
+                        reorder nameChildren = ["RockPickup_8", "RockPickup_9", "RockPickup_10", "RockPickup_11", "RockPickup_12"]
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.019999998, 0.019999998, 0.019999998)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "RockPickup_8" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0, 0, -0.24500738)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_8"]
+                            float2 ui:nodegraph:node:pos = (160, 160)
+                            int ui:nodegraph:node:stackingOrder = 8
+                            quatf xformOp:orient = (0.9925058, 0, 0, -0.122197516)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (4.459092, 52.391373, -1.2277921)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Rub", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Rub" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Rub.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "You hiding?"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_9" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0, 0, 0.8024946)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_9"]
+                            float2 ui:nodegraph:node:pos = (180, 180)
+                            int ui:nodegraph:node:stackingOrder = 9
+                            quatf xformOp:orient = (0.92057455, 0, 0, 0.39056686)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (0.7238701, 40.417553, 6.612002)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Striped", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Striped" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Striped.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "I got you!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_10" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (0.25364158, -5.7919497e-8, -2.2584826e-8)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_10"]
+                            float2 ui:nodegraph:node:pos = (200, 200)
+                            int ui:nodegraph:node:stackingOrder = 10
+                            quatf xformOp:orient = (0.991969, 0.1264811, -3.0155448e-8, -7.538862e-9)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (12.77843, 2.9102867, 2.357508)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Wave", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Wave" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Wave.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "There you are!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_11" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-1.6179864, 0.03929476, 0.07463094)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_1"]
+                            float2 ui:nodegraph:node:pos = (40, 40)
+                            int ui:nodegraph:node:stackingOrder = 2
+                            quatf xformOp:orient = (0.6890833, -0.7234552, -0.013438877, 0.039951097)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-11.2438755, 15.147541, -7.956425)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Bowie", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Bowie" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Bowie.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "Hey there!"
+                                }
+                            }
+                        }
+
+                        def "RockPickup_12" (
+                            active = true
+                            customData = {
+                                float3 rotationEulerHint = (-7.568325e-9, 0.17662355, -1.6128218)
+                            }
+                            references = @Scenes/RockPickup.usda@
+                        )
+                        {
+                            reorder nameChildren = ["RockPickup", "Celebrate", "Celebrate_Loop", "SpeechBubble_2"]
+                            float2 ui:nodegraph:node:pos = (60, 60)
+                            int ui:nodegraph:node:stackingOrder = 3
+                            quatf xformOp:orient = (0.68939644, 0.06366131, 0.0610406, -0.718995)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (-0.38560385, 18.901897, -5.9725)
+
+                            over "SpeechBubble"
+                            {
+                                over "SpeechBubble"
+                                {
+                                }
+                            }
+
+                            over "RockPickup"
+                            {
+                                reorder nameChildren = ["RockFriend_Cavity", "RealityKitContent_RockPickupComponent", "Collider", "RigidBody", "MotionState"]
+                                float3 xformOp:translate = (0, 0, 0)
+
+                                over "SpeechBubble"
+                                {
+                                    over "SpeechBubble"
+                                    {
+                                    }
+                                }
+
+                                def "RockFriend_Cavity" (
+                                    active = true
+                                    references = @GameAssets/RockFriend_Cavity.usda@
+                                )
+                                {
+                                    float3 xformOp:scale = (50.000008, 50.000008, 50.000008)
+                                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                                }
+
+                                over "RealityKitContent_RockPickupComponent"
+                                {
+                                    float speechBubbleDuration = 4
+                                    string speechBubbleText = "Hey you."
+                                }
+                            }
+                        }
+                    }
+
+                    def Xform "ParticleEmitterDust"
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.02, 0.02, 0.02)
+                        float3 xformOp:translate = (0, 0.4762391, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def RealityKitComponent "VFXEmitter"
+                        {
+                            token info:id = "RealityKit.VFXEmitter"
+
+                            def RealityKitStruct "currentState"
+                            {
+                                token birthLocation = "Volume"
+                                double emissionDuration = 5
+                                token emitterShape = "Cylinder"
+                                bool isLocal = 1
+                                bool isLocalFields = 1
+                                float particleSpeed = 0
+                                float3 shapeSize = (22, 40, 22)
+
+                                def RealityKitStruct "mainEmitter"
+                                {
+                                    float birthRate = 250
+                                    token blendMode = "Additive"
+                                    float4 endColorA = (0.0013006331, 0.032195132, 1, 1)
+                                    bool isLightingEnabled = 1
+                                    float noiseAnimationSpeed = 1
+                                    float noiseScale = 1
+                                    float noiseStrength = 0.1
+                                    token opacityOverLife = "GradualFadeInOut"
+                                    double particleLifeSpan = 5
+                                    float particleSize = 0.05
+                                    float particleSizeVariation = 0.04
+                                    float sizeMultiplierAtEndOfLifespan = 1
+                                    float4 startColorA = (1, 0.7822493, 0.6917517, 0.39528146)
+                                    float4 startColorB = (1, 1, 1, 1)
+                                    bool useEndColor = 0
+                                    bool useEndColorRange = 0
+                                    bool useStartColorRange = 0
+                                }
+
+                                def RealityKitStruct "spawnedEmitter"
+                                {
+                                }
+                            }
+                        }
+
+                        def RealityKitComponent "HierarchicalFade"
+                        {
+                            uniform token info:id = "RealityKit.HierarchicalFade"
+                            float opacity = 0
+                        }
+                    }
+
+                    def Xform "VolumeBoundary" (
+                        active = true
+                    )
+                    {
+                        float2 ui:nodegraph:node:pos = (20, 20)
+                        int ui:nodegraph:node:stackingOrder = 1
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "Volume_Boundary" (
+                            active = true
+                            references = @SourceAssets/Models/Volume_Boundary.usdc@
+                        )
+                        {
+                            quatf xformOp:orient = (0.70710677, -0.70710677, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_CompoundCollisionMarkerComponent"
+                        {
+                            bool deleteModel = 1
+                            token group = "volumeBoundary"
+                            uniform token info:id = "RealityKitContent.CompoundCollisionMarkerComponent"
+                        }
+
+                        def RealityKitComponent "HierarchicalFade"
+                        {
+                            uniform token info:id = "RealityKit.HierarchicalFade"
+                            float opacity = 0
+                        }
+                    }
+
+                    def Xform "LevelCollider" (
+                        active = true
+                    )
+                    {
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        float3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def "LevelCollider" (
+                            active = true
+                            references = @Scenes/LevelCollider.usda@
+                        )
+                        {
+                            float3 xformOp:scale = (1, 1, 1)
+                            float3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def RealityKitComponent "HierarchicalFade"
+                            {
+                                uniform token info:id = "RealityKit.HierarchicalFade"
+                                float opacity = 0
+                            }
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_CompoundCollisionMarkerComponent"
+                        {
+                            bool deleteModel = 1
+                            token group = "shadowReceiver"
+                            uniform token info:id = "RealityKitContent.CompoundCollisionMarkerComponent"
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_LevelInputTargetComponent"
+                        {
+                            uniform token info:id = "RealityKitContent.LevelInputTargetComponent"
+                        }
+                    }
+
+                    def Xform "WinGameCollider" (
+                        active = true
+                    )
+                    {
+                        reorder nameChildren = ["Collider", "RealityKitContent_WinGameTriggerComponent", "Sphere", "Sphere"]
+                        quatf xformOp:orient = (1, 0, 0, 0)
+                        float3 xformOp:scale = (0.02, 0.02, 0.02)
+                        float3 xformOp:translate = (-0.25038654, 1.124261, -0.041679416)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                        def RealityKitComponent "Collider"
+                        {
+                            uint group = 1
+                            uniform token info:id = "RealityKit.Collider"
+                            uint mask = 4294967295
+                            token type = "Default"
+
+                            def RealityKitStruct "Shape"
+                            {
+                                float3 extent = (6, 5, 10)
+                                float radius = 1
+                                token shapeType = "Sphere"
+
+                                def RealityKitStruct "pose"
+                                {
+                                }
+                            }
+                        }
+
+                        def RealityKitCustomComponent "RealityKitContent_WinGameTriggerComponent"
+                        {
+                            uniform token info:id = "RealityKitContent.WinGameTriggerComponent"
+                        }
+
+                        def Sphere "Sphere" (
+                            active = true
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            reorder nameChildren = ["DefaultMaterial", "Material"]
+                            rel material:binding = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                            double radius = 0.1
+                            quatf xformOp:orient = (1, 0, 0, 0)
+                            float3 xformOp:scale = (5, 0.1, 5)
+                            float3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                            def Material "Material"
+                            {
+                                reorder nameChildren = ["PreviewSurface", "FadeColor"]
+                                color3f inputs:FadeColorBottom = (0, 0, 0) (
+                                    colorSpace = ""
+                                    customData = {
+                                        dictionary realitykit = {
+                                            float2 positionInSubgraph = (-491.39417, -117.34749)
+                                            int stackingOrderInSubgraph = 2358
+                                        }
+                                    }
+                                )
+                                color3f inputs:FadeColorTop = (0.5882353, 0.5882353, 0.5882353) (
+                                    colorSpace = "lin_srgb"
+                                    customData = {
+                                        dictionary realitykit = {
+                                            float2 positionInSubgraph = (-477.73157, -56.674484)
+                                            int stackingOrderInSubgraph = 2358
+                                        }
+                                    }
+                                )
+                                float inputs:FadeMixAmount = 0 (
+                                    colorSpace = ""
+                                    customData = {
+                                        dictionary realitykit = {
+                                            float2 positionInSubgraph = (-484.5658, 5.2239227)
+                                            int stackingOrderInSubgraph = 2358
+                                        }
+                                    }
+                                )
+                                float inputs:GradientEndY = 1.8 (
+                                    colorSpace = ""
+                                    customData = {
+                                        dictionary realitykit = {
+                                            float2 positionInSubgraph = (-477.27002, 64.685074)
+                                            int stackingOrderInSubgraph = 2358
+                                        }
+                                    }
+                                )
+                                float inputs:GradientGamma = 0.5 (
+                                    colorSpace = ""
+                                    customData = {
+                                        dictionary realitykit = {
+                                            float2 positionInSubgraph = (-478.22058, 129.92522)
+                                            int stackingOrderInSubgraph = 2358
+                                        }
+                                    }
+                                )
+                                float inputs:GradientStartY = 1.8 (
+                                    colorSpace = ""
+                                    customData = {
+                                        dictionary realitykit = {
+                                            float2 positionInSubgraph = (-476.81738, 190.89958)
+                                            int stackingOrderInSubgraph = 2358
+                                        }
+                                    }
+                                )
+                                token outputs:mtlx:surface.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material/UnlitSurface.outputs:out>
+                                token outputs:realitykit:vertex
+                                float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (335.25, 100.5)
+
+                                def "FadeColor" (
+                                    active = true
+                                    references = @Materials/MainMaterials.usda@</Root/MainNodeGraphs/FadeColor>
+                                )
+                                {
+                                    color3f inputs:BaseColor = (0.999996, 1, 1) (
+                                        colorSpace = "srgb_texture"
+                                    )
+                                    color3f inputs:FadeColorBottom.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material.inputs:FadeColorBottom>
+                                    color3f inputs:FadeColorTop.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material.inputs:FadeColorTop>
+                                    float inputs:FadeMixAmount.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material.inputs:FadeMixAmount>
+                                    float inputs:GradientEndY.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material.inputs:GradientEndY>
+                                    float inputs:GradientGamma.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material.inputs:GradientGamma>
+                                    float inputs:GradientStartY.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material.inputs:GradientStartY>
+                                    float2 ui:nodegraph:node:pos = (-222.65274, 32.435577)
+                                    int ui:nodegraph:node:stackingOrder = 2314
+                                }
+
+                                def Shader "UnlitSurface"
+                                {
+                                    uniform token info:id = "ND_realitykit_unlit_surfaceshader"
+                                    bool inputs:applyPostProcessToneMap = 0
+                                    color3f inputs:color.connect = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/WinGameCollider/Sphere/Material/FadeColor.outputs:Out>
+                                    bool inputs:hasPremultipliedAlpha
+                                    float inputs:opacity
+                                    token outputs:out
+                                    float2 ui:nodegraph:node:pos = (44.511673, 98.357605)
+                                    int ui:nodegraph:node:stackingOrder = 2316
+                                }
+                            }
+
+                            def RealityKitCustomComponent "RealityKitContent_ModelFaderMarkerComponent"
+                            {
+                                uniform token info:id = "RealityKitContent.ModelFaderMarkerComponent"
+                            }
+                        }
+                    }
+                }
+            }
+
+            def RealityKitCustomComponent "RealityKitContent_ModelFaderMarkerComponent"
+            {
+                uniform token info:id = "RealityKitContent.ModelFaderMarkerComponent"
+            }
+
+            def RealityKitComponent "ImageBasedLightReceiver"
+            {
+                rel iblEntity = </Root/PhysicsRoot/ExteriorLighting/IBL>
+                uniform token info:id = "RealityKit.ImageBasedLightReceiver"
+            }
+        }
+
+        def Xform "ExteriorLighting" (
+            active = true
+        )
+        {
+            reorder nameChildren = ["BakedDirectionalLightSource", "DirectionalLight", "IBL"]
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Xform "IBL" (
+                active = true
+            )
+            {
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+                quatf xformOp:orient = (1, 0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                float3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def RealityKitComponent "ImageBasedLight"
+                {
+                    float blendIBLsFactor = 1
+                    token blendMode = "blend"
+                    bool enableBlend = 1
+                    bool enableRotation = 1
+                    asset ibl = @SourceAssets/Textures/DesertIBL.exr@
+                    asset iblBlend = @SourceAssets/Textures/GenericStudioIBL.exr@
+                    uniform token info:id = "RealityKit.ImageBasedLight"
+                    float intensityExponent = 0
+                    bool isGlobalIBL = 0
+                }
+
+                def RealityKitCustomComponent "RealityKitContent_IBLFaderComponent"
+                {
+                    uniform token info:id = "RealityKitContent.IBLFaderComponent"
+                }
+            }
+
+            def "BakedDirectionalLightSource" (
+                active = true
+                references = @GameAssets/BakedDirectionalLightSource.usda@
+            )
+            {
+                float3 xformOp:scale = (50, 50, 50)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def RealityKitComponent "HierarchicalFade"
+                {
+                    uniform token info:id = "RealityKit.HierarchicalFade"
+                    float opacity = 0
+                }
+            }
+        }
+    }
+
+    def RealityKitComponent "ImageBasedLightReceiver"
+    {
+        rel iblEntity = </Root/PhysicsRoot/ExteriorLighting/IBL>
+        uniform token info:id = "RealityKit.ImageBasedLightReceiver"
+    }
+
+    def RealityKitComponent "RCP_BehaviorsContainer"
+    {
+        rel behaviors = [
+            </Root/OnNotification>,
+            </Root/OnNotification2>,
+        ]
+        uniform token info:id = "RCP.BehaviorsContainer"
+    }
+
+    def Preliminary_Behavior "OnNotification"
+    {
+        rel actions = </Root/OnNotification/Action>
+        uniform bool exclusive
+        rel triggers = </Root/OnNotification/Trigger>
+
+        def Preliminary_Trigger "Trigger"
+        {
+            rel affectedObjects = </Root>
+            string identifier = "PlayOutro"
+            token info:id = "Notification"
+        }
+
+        def Preliminary_Action "Action"
+        {
+            rel affectedObjects = </Root>
+            rel animationLibraryKey = </Root/PlayOutro>
+            rel animationLibraryKeyOverrideKey = </Root/OnNotification/Trigger>
+            token info:id = "PlayTimeline"
+            int loops = 0
+            int performCount = 1
+            token type = "serial"
+        }
+    }
+
+    def RealityKitTimeline "PlayOutro"
+    {
+        reorder nameChildren = ["Track2", "Track2", "Track2", "Track2", "Track2"]
+        def RealityKitTrack "Track"
+        {
+            reorder nameChildren = ["Enter_Post_Game_Notification", "Outro_Speech_1", "Fade_to_Black_Notification2", "Outro_Speech_2", "Outro_Speech_3"]
+            def RealityKitAction "Enter_Post_Game_Notification"
+            {
+                string actionKind = "notification"
+                double duration = 0
+                uniform token info:id = "84E10218-2FBB-4E05-B07C-7A4B682A03CE"
+                string notificationName = "EnterPostGame"
+                double startTime = 15.583
+                rel target = </Root>
+            }
+
+            def RealityKitAction "Outro_Speech_1"
+            {
+                string actionKind = "notification"
+                double duration = 0
+                uniform token info:id = "A443AB23-8E6C-465E-AF28-6A635000C849"
+                string notificationName = "NextOutroSpeechBubble"
+                double startTime = 1.4710991709126107
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+            }
+
+            def RealityKitAction "Fade_to_Black_Notification2"
+            {
+                string actionKind = "notification"
+                double duration = 0
+                uniform token info:id = "DE2711ED-1E88-46B7-B91B-FA5A3BA3151E"
+                string notificationName = "FadeToBlack"
+                double startTime = 10.348376553442716
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+            }
+
+            def RealityKitAction "Outro_Speech_2"
+            {
+                string actionKind = "notification"
+                double duration = 0
+                uniform token info:id = "A443AB23-8E6C-465E-AF28-6A635000C849"
+                string notificationName = "NextOutroSpeechBubble"
+                double startTime = 5.570008708017577
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (40, 40)
+                int ui:nodegraph:node:stackingOrder = 2
+            }
+
+            def RealityKitAction "Outro_Speech_3"
+            {
+                string actionKind = "notification"
+                double duration = 0
+                uniform token info:id = "A443AB23-8E6C-465E-AF28-6A635000C849"
+                string notificationName = "NextOutroSpeechBubble"
+                double startTime = 9.2295309215041
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (60, 60)
+                int ui:nodegraph:node:stackingOrder = 3
+            }
+
+            def RealityKitAction "Outro_Speech_32"
+            {
+                string actionKind = "notification"
+                double duration = 0
+                uniform token info:id = "A443AB23-8E6C-465E-AF28-6A635000C849"
+                string notificationName = "IntroSpeechBubbleClose"
+                double startTime = 12.437810582955231
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (80, 80)
+                int ui:nodegraph:node:stackingOrder = 4
+            }
+        }
+    }
+
+    def RealityKitMeshSortingGroup "LevelSortingGroup" (
+        active = true
+    )
+    {
+    }
+
+    def RealityKitTimeline "OnIntro"
+    {
+        def RealityKitTrack "Track"
+        {
+            def RealityKitAction "Show"
+            {
+                string actionKind = "show"
+                int blendLayer = 300
+                double duration = 3.132090918213406
+                uniform token info:id = "E280FB7A-A8E2-42AE-9001-978DFEF23EB1"
+                double startTime = 5.969593879917416
+                rel target = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/ParticleEmitterDust>
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+
+            def RealityKitAction "Hide"
+            {
+                string actionKind = "hide"
+                int blendLayer = 300
+                double duration = 0
+                uniform token info:id = "94A2ADD6-F4E4-49B2-BE12-BB087CB9C848"
+                double startTime = 0
+                rel target = </Root/PhysicsRoot/Level/SizeAdjust/yOffset/ParticleEmitterDust>
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+    }
+
+    def Preliminary_Behavior "OnNotification2"
+    {
+        rel actions = </Root/OnNotification2/Action>
+        uniform bool exclusive
+        rel triggers = </Root/OnNotification2/Trigger>
+
+        def Preliminary_Trigger "Trigger"
+        {
+            rel affectedObjects = </Root>
+            string identifier = "IntroAnimation"
+            token info:id = "Notification"
+        }
+
+        def Preliminary_Action "Action"
+        {
+            rel affectedObjects = </Root>
+            rel animationLibraryKey = </Root/OnIntro>
+            rel animationLibraryKeyOverrideKey = </Root/OnNotification2/Trigger>
+            token info:id = "PlayTimeline"
+            int loops = 0
+            int performCount = 1
+            token type = "serial"
+        }
+    }
+}
+

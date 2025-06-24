@@ -1,0 +1,526 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (467.0.0.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def Xform "Checkpoint" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["Collider", "Sphere_Inactive", "RealityKitContent_CheckpointComponent", "ParticleEmitter_Big", "ParticleEmitter_Small", "ParticleEmitter_Activate", "Sphere_Active"]
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 4294967295
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (2, 2, 2)
+                float radius = 2
+                token shapeType = "Box"
+
+                def RealityKitStruct "pose"
+                {
+                }
+            }
+        }
+
+        def Sphere "Sphere_Inactive" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            customData = {
+                float3 rotationEulerHint = (0, 0, 0)
+            }
+        )
+        {
+            reorder nameChildren = ["Claimed_Mat", "MaterialInactive", "HierarchicalFade", "ParticleEmitter_Big", "ParticleEmitter_Small"]
+            rel material:binding = </Root/Checkpoint/Sphere_Inactive/MaterialInactive> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            double radius = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.5, 0.03, 0.5)
+            float3 xformOp:translate = (0, -0.75372, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Material "MaterialInactive"
+            {
+                reorder nameChildren = ["DefaultSurfaceShader", "UnlitSurface", "FadeColor"]
+                color3f inputs:FadeColorBottom = (0, 0, 0) (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-773.0154, -220.34505)
+                            int stackingOrderInSubgraph = 9
+                        }
+                    }
+                )
+                color3f inputs:FadeColorTop = (0.5882353, 0.5882353, 0.5882353) (
+                    colorSpace = "lin_srgb"
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-759.3528, -159.67204)
+                            int stackingOrderInSubgraph = 9
+                        }
+                    }
+                )
+                float inputs:FadeMixAmount = 0 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-766.187, -97.773636)
+                            int stackingOrderInSubgraph = 9
+                        }
+                    }
+                )
+                float inputs:GradientEndY = 1.8 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-758.89124, -38.312485)
+                            int stackingOrderInSubgraph = 9
+                        }
+                    }
+                )
+                float inputs:GradientGamma = 0.5 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-759.8418, 26.927658)
+                            int stackingOrderInSubgraph = 9
+                        }
+                    }
+                )
+                float inputs:GradientStartY = 1.8 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-758.4386, 87.90202)
+                            int stackingOrderInSubgraph = 9
+                        }
+                    }
+                )
+                token outputs:mtlx:surface.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive/PBRSurface.outputs:out>
+                token outputs:realitykit:vertex
+                token outputs:surface.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive/DefaultSurfaceShader.outputs:surface>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+                float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (0, 110.5)
+
+                def Shader "DefaultSurfaceShader" (
+                    active = false
+                )
+                {
+                    uniform token info:id = "UsdPreviewSurface"
+                    color3f inputs:diffuseColor = (1, 1, 1) (
+                        colorSpace = "srgb_texture"
+                    )
+                    color3f inputs:emissiveColor = (0.8, 0.8, 0.8) (
+                        colorSpace = "lin_srgb"
+                    )
+                    float inputs:roughness = 0.75
+                    token outputs:surface
+                }
+
+                def "FadeColor" (
+                    active = true
+                    references = @../Materials/MainMaterials.usda@</Root/MainNodeGraphs/FadeColor>
+                )
+                {
+                    color3f inputs:BaseColor = (0.627451, 0.627451, 0.627451) (
+                        colorSpace = "srgb_texture"
+                    )
+                    color3f inputs:FadeColorBottom.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:FadeColorBottom>
+                    color3f inputs:FadeColorTop.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:FadeColorTop>
+                    float inputs:FadeMixAmount.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:FadeMixAmount>
+                    float inputs:GradientEndY (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (677.59125, 155.28543)
+                                int stackingOrderInSubgraph = 1502
+                            }
+                        }
+                    )
+                    float inputs:GradientEndY.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:GradientEndY>
+                    float inputs:GradientGamma.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:GradientGamma>
+                    float inputs:GradientStartY.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:GradientStartY>
+                    float2 ui:nodegraph:node:pos = (-488.86758, -31.244108)
+                    int ui:nodegraph:node:stackingOrder = 2342
+                }
+
+                def Shader "Oneminus"
+                {
+                    uniform token info:id = "ND_realitykit_oneminus_float"
+                    float inputs:in.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive.inputs:FadeMixAmount>
+                    float outputs:out
+                    float2 ui:nodegraph:node:pos = (-541.86584, 131.03847)
+                    int ui:nodegraph:node:stackingOrder = 2349
+                }
+
+                def Shader "PBRSurface"
+                {
+                    uniform token info:id = "ND_realitykit_pbr_surfaceshader"
+                    float inputs:ambientOcclusion.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive/Oneminus.outputs:out>
+                    color3f inputs:baseColor.connect = </Root/Checkpoint/Sphere_Inactive/MaterialInactive/FadeColor.outputs:Out>
+                    float inputs:clearcoat
+                    float3 inputs:clearcoatNormal
+                    float inputs:clearcoatRoughness
+                    bool inputs:hasPremultipliedAlpha
+                    float inputs:opacity
+                    float inputs:opacityThreshold
+                    float inputs:specular
+                    token outputs:out
+                    float2 ui:nodegraph:node:pos = (-241.84879, 99.23671)
+                    int ui:nodegraph:node:stackingOrder = 2355
+                }
+            }
+        }
+
+        def RealityKitCustomComponent "RealityKitContent_CheckpointComponent"
+        {
+            uniform token info:id = "RealityKitContent.CheckpointComponent"
+        }
+
+        def Sphere "Sphere_Active" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            customData = {
+                float3 rotationEulerHint = (0, 0, 0)
+            }
+        )
+        {
+            reorder nameChildren = ["Claimed_Mat", "MaterialActive", "HierarchicalFade", "ParticleEmitter_Big", "ParticleEmitter_Small"]
+            rel material:binding = </Root/Checkpoint/Sphere_Active/MaterialActive> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            double radius = 1
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (2.220446e-16, 0.03, 2.220446e-16)
+            float3 xformOp:translate = (0, -0.75372, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Material "MaterialActive"
+            {
+                reorder nameChildren = ["DefaultSurfaceShader", "PreviewSurface", "Position", "SmoothStep", "Multiply", "Separate3", "Combine2", "Magnitude", "FadeColor"]
+                color3f inputs:FadeColorBottom = (0, 0, 0) (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-680.52734, -391.20255)
+                            int stackingOrderInSubgraph = 2357
+                        }
+                    }
+                )
+                color3f inputs:FadeColorTop = (0.5882353, 0.5882353, 0.5882353) (
+                    colorSpace = "lin_srgb"
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-666.8648, -330.52954)
+                            int stackingOrderInSubgraph = 2357
+                        }
+                    }
+                )
+                float inputs:FadeMixAmount = 0 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-673.699, -268.63113)
+                            int stackingOrderInSubgraph = 2357
+                        }
+                    }
+                )
+                float inputs:GradientEndY = 1.8 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-666.4032, -209.16998)
+                            int stackingOrderInSubgraph = 2357
+                        }
+                    }
+                )
+                float inputs:GradientGamma = 0.5 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-667.3537, -143.92984)
+                            int stackingOrderInSubgraph = 2357
+                        }
+                    }
+                )
+                float inputs:GradientStartY = 1.8 (
+                    colorSpace = ""
+                    customData = {
+                        dictionary realitykit = {
+                            float2 positionInSubgraph = (-665.95056, -82.955475)
+                            int stackingOrderInSubgraph = 2357
+                        }
+                    }
+                )
+                token outputs:mtlx:surface.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/PBRSurface.outputs:out>
+                token outputs:realitykit:vertex
+                token outputs:surface.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/DefaultSurfaceShader.outputs:surface>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+                float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (134.63925, 144.34845)
+                int ui:nodegraph:realitykit:subgraphOutputs:stackingOrder = 327
+
+                def Shader "DefaultSurfaceShader" (
+                    active = false
+                )
+                {
+                    uniform token info:id = "UsdPreviewSurface"
+                    color3f inputs:diffuseColor = (1, 1, 1) (
+                        colorSpace = "srgb_texture"
+                    )
+                    color3f inputs:emissiveColor = (0.551233, 0.551233, 0.551233) (
+                        colorSpace = "lin_srgb"
+                    )
+                    float inputs:roughness = 0.75
+                    token outputs:surface
+                }
+
+                def Shader "Position"
+                {
+                    uniform token info:id = "ND_position_vector3"
+                    string inputs:space = "object"
+                    float3 outputs:out
+                    float2 ui:nodegraph:node:pos = (-1357.4883, 33.507645)
+                    int ui:nodegraph:node:stackingOrder = 448
+                }
+
+                def Shader "SmoothStep"
+                {
+                    uniform token info:id = "ND_smoothstep_float"
+                    float inputs:high = 1
+                    float inputs:in.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Multiply.outputs:out>
+                    float inputs:low = 0.99
+                    float outputs:out
+                    float2 ui:nodegraph:node:pos = (-407.12448, 47.818504)
+                    int ui:nodegraph:node:stackingOrder = 330
+                }
+
+                def Shader "Multiply"
+                {
+                    uniform token info:id = "ND_multiply_float"
+                    float inputs:in1.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Magnitude.outputs:out>
+                    float inputs:in2 = 1.2
+                    float outputs:out
+                    float2 ui:nodegraph:node:pos = (-565.8954, 43.727005)
+                    int ui:nodegraph:node:stackingOrder = 451
+                }
+
+                def Shader "Separate3"
+                {
+                    uniform token info:id = "ND_separate3_vector3"
+                    float3 inputs:in.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Position.outputs:out>
+                    float outputs:outx
+                    float outputs:outy
+                    float outputs:outz
+                    float2 ui:nodegraph:node:pos = (-1141.6055, 33.820312)
+                    int ui:nodegraph:node:stackingOrder = 444
+                }
+
+                def Shader "Combine2"
+                {
+                    uniform token info:id = "ND_combine2_vector2"
+                    float inputs:in1.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Separate3.outputs:outx>
+                    float inputs:in2.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Separate3.outputs:outz>
+                    float2 outputs:out
+                    float2 ui:nodegraph:node:pos = (-926.0547, 35.80078)
+                    int ui:nodegraph:node:stackingOrder = 442
+                }
+
+                def Shader "Magnitude"
+                {
+                    uniform token info:id = "ND_magnitude_vector2"
+                    float2 inputs:in.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Combine2.outputs:out>
+                    float outputs:out
+                    float2 ui:nodegraph:node:pos = (-722.875, 35.109375)
+                    int ui:nodegraph:node:stackingOrder = 449
+                }
+
+                def "FadeColor" (
+                    active = true
+                    references = @../Materials/MainMaterials.usda@</Root/MainNodeGraphs/FadeColor>
+                )
+                {
+                    color3f inputs:BaseColor = (0.627451, 0.627451, 0.627451) (
+                        colorSpace = "srgb_texture"
+                    )
+                    color3f inputs:FadeColorBottom.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:FadeColorBottom>
+                    color3f inputs:FadeColorTop.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:FadeColorTop>
+                    float inputs:FadeMixAmount.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:FadeMixAmount>
+                    float inputs:GradientEndY.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:GradientEndY>
+                    float inputs:GradientGamma.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:GradientGamma>
+                    float inputs:GradientStartY.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:GradientStartY>
+                    float2 ui:nodegraph:node:pos = (-429.3168, -164.32224)
+                    int ui:nodegraph:node:stackingOrder = 2333
+                }
+
+                def Shader "PBRSurface"
+                {
+                    uniform token info:id = "ND_realitykit_pbr_surfaceshader"
+                    float inputs:ambientOcclusion.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/Oneminus.outputs:out>
+                    color3f inputs:baseColor.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/FadeColor.outputs:Out>
+                    color3f inputs:emissiveColor
+                    float inputs:metallic
+                    float3 inputs:normal
+                    float inputs:opacity.connect = </Root/Checkpoint/Sphere_Active/MaterialActive/SmoothStep.outputs:out>
+                    float inputs:opacityThreshold = 0.1
+                    float inputs:specular
+                    token outputs:out
+                    float2 ui:nodegraph:node:pos = (-131.82524, 54.255157)
+                    int ui:nodegraph:node:stackingOrder = 2365
+                }
+
+                def Shader "Oneminus"
+                {
+                    uniform token info:id = "ND_realitykit_oneminus_float"
+                    float inputs:in.connect = </Root/Checkpoint/Sphere_Active/MaterialActive.inputs:FadeMixAmount>
+                    float outputs:out
+                    float2 ui:nodegraph:node:pos = (-501.3668, -36.723686)
+                    int ui:nodegraph:node:stackingOrder = 2367
+                }
+            }
+
+            def RealityKitComponent "RCP_BehaviorsContainer"
+            {
+                uniform token info:id = "RCP.BehaviorsContainer"
+            }
+        }
+
+        def RealityKitCustomComponent "RealityKitContent_ModelFaderMarkerComponent"
+        {
+            uniform token info:id = "RealityKitContent.ModelFaderMarkerComponent"
+        }
+    }
+
+    def RealityKitTimeline "Activate"
+    {
+        reorder nameChildren = ["Track", "Track2", "Track3"]
+        def RealityKitTrack "Track2"
+        {
+            def RealityKitAction "Transform_To"
+            {
+                string actionKind = "moveTo"
+                int blendLayer = 300
+                double duration = 0.2926056906196212
+                uniform token info:id = "C6D85DDA-E39D-4789-9457-63DB86949281"
+                float3 position = (0, -0.75372, 0)
+                quatf rotation = (1, 0, 0, 0)
+                float3 scale = (0.8, 0.03, 0.8)
+                double startTime = 0.07913349827882954
+                rel target = </Root/Checkpoint/Sphere_Active>
+
+                def RealityKitStruct "transformMode"
+                {
+                    rel referenceEntity = </Root>
+                    token type = "parent"
+                }
+
+                def RealityKitStruct "timingFunction"
+                {
+                    float2 controlPoint2 = (0.5, 1.4)
+                    token type = "cubicBezier"
+                }
+            }
+        }
+
+        def RealityKitTrack "Track3"
+        {
+            def RealityKitAction "Transform_To"
+            {
+                string actionKind = "moveTo"
+                int blendLayer = 300
+                double duration = 0.19584028076592083
+                uniform token info:id = "4F26F7BC-F997-432D-9E7B-4CCA1357AEE8"
+                float3 position = (0, -0.75372, 0)
+                quatf rotation = (1, 0, 0, 0)
+                float3 scale = (0.001, 0.001, 0.001)
+                double startTime = 0
+                rel target = </Root/Checkpoint/Sphere_Inactive>
+
+                def RealityKitStruct "transformMode"
+                {
+                    rel referenceEntity = </Root>
+                    token type = "parent"
+                }
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+    }
+
+    def RealityKitTimeline "Reset"
+    {
+        reorder nameChildren = ["Track3", "Track"]
+        def RealityKitTrack "Track3"
+        {
+            def RealityKitAction "Transform_To"
+            {
+                string actionKind = "moveTo"
+                int blendLayer = 300
+                double duration = 0.1
+                uniform token info:id = "2C285D14-44DB-4836-A9C5-6E291BB819A6"
+                float3 position = (0, -0.75372, 0)
+                quatf rotation = (1, 0, 0, 0)
+                float3 scale = (0.5, 0.03, 0.5)
+                double startTime = 0
+                rel target = </Root/Checkpoint/Sphere_Inactive>
+
+                def RealityKitStruct "transformMode"
+                {
+                    rel referenceEntity = </Root>
+                    token type = "parent"
+                }
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+
+        def RealityKitTrack "Track"
+        {
+            def RealityKitAction "Transform_To"
+            {
+                string actionKind = "moveTo"
+                int blendLayer = 300
+                double duration = 0.1
+                uniform token info:id = "2C285D14-44DB-4836-A9C5-6E291BB819A6"
+                float3 position = (0, -0.75372, 0)
+                quatf rotation = (1, 0, 0, 0)
+                float3 scale = (0.01, 0.03, 0.01)
+                double startTime = 0
+                rel target = </Root/Checkpoint/Sphere_Active>
+                float2 ui:nodegraph:node:pos = (-597.6745, 88.58348)
+                int ui:nodegraph:node:stackingOrder = 1
+
+                def RealityKitStruct "transformMode"
+                {
+                    rel referenceEntity = </Root>
+                    token type = "parent"
+                }
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+    }
+}
+

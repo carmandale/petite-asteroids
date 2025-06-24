@@ -1,0 +1,50 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (469.0.0.0.1)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Skydome", "StaticLevelMaterials", "Skydome_MI"]
+    def "Skydome" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (-1.5707963, 0, 0)
+        }
+        references = @../SourceAssets/Models/Skydome.usdc@
+    )
+    {
+        rel material:binding = </Root/Skydome_MI> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.70710677, -0.7071067, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Skydome_msh"
+        {
+            over "Sphere_003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/Skydome_MI> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+    }
+
+    def "Skydome_MI" (
+        active = true
+        references = @../Materials/MainMaterials.usda@</Root/MainMaterials/Skydome_MM>
+    )
+    {
+    }
+}
+
